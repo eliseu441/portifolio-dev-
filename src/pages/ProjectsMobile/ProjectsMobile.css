@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Rakkas:400');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400');
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+@media (max-width: 771px){
+  .page-projects-mobile{
+
+    padding-top: 100px;
+    background-color: black;
+    width: 100vw;
+    display: grid;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+  .card-projects-mobile{
+    width: 100vw;
+    height: max-content;
+    background-color: black;
+  }
+  .hermes-project{
+    
+    text-align: center;
+    width: 100vw;
+  }
+  .hermes-project p{
+
+    font-family: 'Archivo Black', sans-serif;
+        font-size: 30px;
+        margin: 0;
+        background: rgb(174, 118, 34);
+        background: linear-gradient(164deg, rgb(255, 153, 0) 15%, rgb(255, 255, 255) 48%, rgb(255, 153, 0) 83%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+  }
+  .vergz-tattoo{
+    text-align: center;
+    width: 100vw;
+
+  }
+  .vergz-tattoo p{
+
+    font-family: 'Archivo Black', sans-serif;
+        font-size: 30px;
+        margin: 0;
+        background: rgb(174, 118, 34);
+        background: linear-gradient(164deg, rgb(99, 99, 99) 15%, rgb(255, 255, 255) 48%, rgb(92, 92, 92) 83%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+  }
+  .monster-interface{
+    text-align: center;
+    width: 100vw;
+  }
+  .monster-interface p{
+
+    font-family: 'Archivo Black', sans-serif;
+        font-size: 30px;
+        margin: 0;
+        background: rgb(174, 118, 34);
+        background: linear-gradient(164deg, rgb(60, 255, 0) 15%, rgb(255, 255, 255) 48%, rgb(51, 255, 0) 83%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+  }
+  .warning-projects-mobile{
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+    margin: 0;
+    color: rgb(255, 98, 98)
+  }
+  
+}

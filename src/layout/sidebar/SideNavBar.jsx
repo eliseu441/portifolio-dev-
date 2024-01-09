@@ -3,8 +3,8 @@ import "./SideNavBar.css";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap-icons/icons/0-circle-fill.svg';
 import { Link } from "react-router-dom";
-import logo from './logo.png';
-import logo2 from './logoV.png';
+import logo from './img/logo.png';
+import logo2 from './img/logoV.png';
 
 const SideNavBar = () => {
 	const [isExpanded, setExpendState] = useState(false);
@@ -22,7 +22,7 @@ const SideNavBar = () => {
 	}
 	const removeChecked = () => {
 		var checkbox = document.querySelector("#checkbox-menu")
-		if(checkbox){
+		if (checkbox) {
 
 			checkbox.click()
 		}
@@ -44,51 +44,60 @@ const SideNavBar = () => {
 					)}
 					<input type="checkbox" id="checkbox-menu" onClick={() => setExpendState(!isExpanded)} />
 					<label for="checkbox-menu" className="hamburguer ">
-						<img class="iconSide d-flex justify-content-center" src={logo2} style={{ zIndex: -1 }} />
+						<div id="saturn">
+							<div class="planet bottom planet-bg"></div>
+							<div class="rings"></div>
+							<div class="planet top planet-bg"></div>
+						</div>
 					</label>
 				</div>
 				{isExpanded && (
 					<div className="nav-menu mt-0">
 						<div class="list-group">
-						<Link to="/" className="decoration " onClick={e => removeChecked()}>
+							<Link to="/homeMobile" className="decoration " onClick={e => removeChecked()}>
 								<span class="list-group-item list-group-item-action"><span class="d-flex justify-content-center">
-									<span style={{ marginLeft: "10px"}} class=" title-home"> Home</span>
+									<span style={{ marginLeft: "10px" }} class=" title-home"> ABOUT ME</span>
 								</span></span>
 							</Link>
-							<Link to="/personalize" className="decoration triagem" onClick={e => removeChecked()}>
+							<Link to="/ProjectsMobile" className="decoration " onClick={e => removeChecked()}>
 								<span class="list-group-item list-group-item-action"><span class="d-flex justify-content-center">
-									<span style={{ marginLeft: "10px"}} class=" title-tour"> Iniciar triagem</span>
+									<span style={{ marginLeft: "10px" }} class=" title-home"> PROJECTS</span>
+								</span></span>
+							</Link>
+							<Link to="/experienceMobile" className="decoration " onClick={e => removeChecked()}>
+								<span class="list-group-item list-group-item-action"><span class="d-flex justify-content-center">
+									<span style={{ marginLeft: "10px" }} class=" title-home"> EXPERIENCE</span>
 								</span></span>
 							</Link>
 							<div>
 								<span style={{ backgroundColor: "rgb(0, 0, 0, 0.7)" }} class="list-group-item list-group-item-action dropdown-toggle " onClick={handleClick}><span class="text-margin "><i class="bi bi-telephone-fill icons-color"></i>
-									<span style={{ marginLeft: "10px" }} class="menu-titles "> Contato </span>
-								 </span></span>
+									<span style={{ marginLeft: "10px" }} class="menu-titles "> Contact </span>
+								</span></span>
 							</div>
 							<div className="submenu">
 								<div>
 									<div class="list-group ">
-									<Link to="https://www.instagram.com/vergz.tattoo/" className="decoration " onClick={e => removeChecked()}>
-										<span class="list-group-item list-group-item-action "><span class="text-margin  ">
+										<Link to="https://www.linkedin.com/in/eliseu-caetano-da-silva-68a272186/" className="decoration " onClick={e => removeChecked()}>
+											<span class="list-group-item list-group-item-action "><span class="text-margin  ">
 
-											<span style={{ marginLeft: "20px", color:"red"  }} class="menu-titles">  <i class="bi bi-instagram fs-6" ></i></span>
-											<span style={{ marginLeft: "10px" }} class="menu-titles "> Instagram	</span>
-										</span></span>
+												<span style={{ marginLeft: "20px", color: "#00bbf0" }} class="menu-titles">  <i class="bi bi-linkedin fs-6"></i></span>
+												<span style={{ marginLeft: "10px" }} class="menu-titles "> Linkedin	</span>
+											</span></span>
 										</Link>
 									</div>
 									<div class="list-group">
-									<Link to="https://api.whatsapp.com/send/?phone=5512982047622&text&type=phone_number&app_absent=0" className="decoration " onClick={e => removeChecked()}>
-										<span class="list-group-item list-group-item-action "><span class="text-margin ">
+										<Link to="https://github.com/eliseu441" className="decoration " onClick={e => removeChecked()}>
+											<span class="list-group-item list-group-item-action "><span class="text-margin ">
 
-											<span style={{ marginLeft: "20px", color:"rgb(22, 238, 22)" }} class="menu-titles ">  <i class="bi bi-whatsapp icons-size"></i></span>
-											<span style={{ marginLeft: "10px" }} class="menu-titles "> Whatsapp	 </span>
-										</span></span>
+												<span style={{ marginLeft: "20px", color: "white" }} class="menu-titles ">  <i class="bi bi-github fs-6"></i></span>
+												<span style={{ marginLeft: "10px" }} class="menu-titles "> Github	 </span>
+											</span></span>
 										</Link>
 									</div>
 								</div>
 							</div>
-							
-							
+
+
 
 						</div>
 					</div>

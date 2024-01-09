@@ -17,7 +17,6 @@ import monster1 from './img/monster/monster1_desk.png';
 import monster2 from './img/monster/monster2_desk.png';
 import monster3 from './img/monster/monster1_mobile.png';
 import monster4 from './img/monster/monster2_mobile.png';
-import cesar from './img/cesar_boust_nobackground.png';
 
 function Projects() {
     const [author, setAuthor] = useState("MICHELANGELO");
@@ -103,9 +102,9 @@ function Projects() {
                         >
                             Infos
                         </button>
-                        
-                    <Link to="http://hermesarts.com.br:5000" ><button
-                         class='button-desc side-production ms-5'>
+
+                        <Link to="http://hermesarts.com.br:5000" ><button
+                            class='button-desc side-production ms-5'>
                             Deploy link<i class="bi bi-arrow-right"></i>
                         </button>
                         </Link>
@@ -128,9 +127,9 @@ function Projects() {
                             >
                                 Infos
                             </button>
-                            
-                    <Link to="https://vergs-tattoo-kcqo0vg6e-eliseu441.vercel.app/" ><button
-                             class='button-desc side-production ms-5'>
+
+                            <Link to="https://vergs-tattoo-kcqo0vg6e-eliseu441.vercel.app/" ><button
+                                class='button-desc side-production ms-5'>
                                 Deploy link<i class="bi bi-arrow-right"></i>
                             </button>
                             </Link>
@@ -155,9 +154,9 @@ function Projects() {
                         >
                             Infos
                         </button>
-                        
-                    <Link to="https://monster-interface.vercel.app/" ><button
-                         class='button-desc side-production ms-5'>
+
+                        <Link to="https://monster-interface.vercel.app/" ><button
+                            class='button-desc side-production ms-5'>
                             Deploy link<i class="bi bi-arrow-right"></i>
                         </button>
                         </Link>
@@ -179,7 +178,7 @@ function Projects() {
 
                         <div class="modal-content">
                             <div class="modal-header  ">
-                                
+
                                 <button type="button" class="btn-close btn-close-white" id="closeCircuito" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
 

@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Rakkas:400');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400');
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+@media (max-width: 771px){
+  .page-experience-mobile{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./img/Earth Dy.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+  }
+  .desc-experience-mobile{
+    padding: 5px;
+    text-align: center;
+    background-color: black;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 700 !important;
+    font-size: 2vh;
+    letter-spacing: 1.1px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(121deg, rgba(255, 255, 255, 1) 0%, rgba(168, 168, 168, 1) 46%, rgba(255, 255, 255, 1) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: -1px -1px 8px rgba(255, 255, 255, 0.3);
+  }
+
+  
+
+  .card-experience-mobile {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 60px;
+    display: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    font-family: sans-serif;
+  }
+
+  .card-experience-mobile::before,
+  .card-experience-mobile::after {
+    content: "";
+    background-color: #fab5704c;
+    position: absolute;
+  }
+
+  .card-experience-mobile::before {
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    top: 30%;
+    right: 7%;
+  }
+
+
+  .card-experience-mobile .box {
+    width: 80vw;
+    margin: 0 10vw 5vw 10vw;
+    height: max-content;
+    padding: 3vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    border-radius: 0.7rem;
+    transition: all ease 0.3s;
+    box-shadow: 0px 0px 20px 1px #ffbb763f;
+    border: 1px solid rgba(255, 255, 255, 0.454);
+  }
+  .ferramentas-mobile {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0.5);
+    
+  }
+
+  .card-experience-mobile .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .card-experience-mobile .box .title-home-mobile {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 700 !important;
+    font-size: 4vh;
+    letter-spacing: 1.1px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(121deg, rgba(255, 255, 255, 1) 0%, rgba(168, 168, 168, 1) 46%, rgba(255, 255, 255, 1) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: -1px -1px 8px rgba(255, 255, 255, 0.3);
+  }
+
+  .card-experience-mobile .box .sub-home-mobile {
+    font-family: 'Archivo Black', sans-serif;
+    text-align: center;
+    font-size: 2vh;
+    letter-spacing: 1.1px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(121deg, rgba(255, 255, 255, 1) 0%, rgba(168, 168, 168, 1) 46%, rgba(255, 255, 255, 1) 100%);
+    background-clip: text;
+    -webkit-box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-text-fill-color: transparent;
+  }
+
+  .card-experience-mobile .box div strong {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-experience-mobile .box div p {
+    margin: 0;
+    font-size: 0.9em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+  }
+
+  .card-experience-mobile .box div span {
+    font-size: 0.7rem;
+    font-weight: 300;
+  }
+
+  .card-experience-mobile .box div span:nth-child(3) {
+    font-weight: 500;
+    margin-right: 0.2rem;
+  }
+
+
+  
+}

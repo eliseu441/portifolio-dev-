@@ -116,8 +116,26 @@ function Home() {
             </div>
 
             <div class="aviso">
+                <div class='card-mobile-advice'>
+                    <p >This is an redirect screen for mobile navigation. To view the options, click on the Saturn icon in the top left corner.Keep in mind that desktop is a completely different experience</p>
+                </div>
+                <div>
+                    <div class="loader-black">
+                        <div class="blackhole">
+                            <div class="blackhole-circle"></div>
+                            <div class="blackhole-disc"></div>
+                        </div>
+                        <div class="curve">
+                            <svg viewBox="0 0 500 500">
+                                <path id="loading" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97"></path>
+                                <text width="500">
 
-                <h4>Pagina criada para desktop.</h4>
+                                </text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </>
     )
