@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Rakkas:400');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400');
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@media (min-width: 770px) and (min-height: 560px) {
+#map {
+    height: 100%;
+  }
+  #c{
+   width: 100vw;
+   height: 110vh;
+   position: absolute;
+   z-index: -2;
+   margin-top: -110vh;
+  }
+
+.page-default{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
+}
+.container {
+    margin-top: 100px;
+}
+.apresentation{
+    height: 50%;
+    width: 50%;
+    overflow: hidden;
+}
+.apresentation-text{
+    position: absolute;
+    display: grid;
+    justify-content: baseline;
+    align-items: end;
+    margin-top: -91vh;
+    width: max-content;
+    height: 90vh;
+    z-index: -1;
+    position: absolute;
+    font-size: 90px;
+    font-family: 'Archivo Black', sans-serif;
+    text-shadow: -1px -1px 8px rgb(102, 255, 0);
+
+}
+.margin-who{
+    margin-left: 13.3vw;
+    font-size: 100px;
+}
+.margin-is{
+    margin-left: 23vw;
+}
+.whois{
+    margin-left: 23.7vw;
+}
+.description{
+    height: 90vh;
+    width: 60vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+.img-arrow{
+    min-height: 517px;
+    padding-bottom: 2vh;
+    height: 90vh;
+    width: 100%;
+}
+body {
+    background-color: #000000;
+    color: white;
+}
+
+.description-Title{
+    
+    font-family: 'Archivo Black', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.7vw;
+}
+.description .card {
+
+    background-image: url("./img/background_description - Copia.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+  border: 1px solid green;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+    width: 50vw ;
+    padding: 2vw;
+    height: 80vh;
+    transition: 1s ease-in-out;
+    clip-path: polygon(100% 20%, 100% 80%, 80% 100%, 0 100%, 0 0, 80% 0);
+
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+ .description .card span {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: block;
+    font-size: 1em;
+  }
+  
+ .description .card .info {
+    font-weight: 400;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 0.72em;
+    margin: 1em;
+  }
+  
+ .description .card .img {
+    width: 4.8em;
+    height: 4.8em;
+    background: white;
+    border-radius: 15px;
+    margin: auto;
+  }
+  
+ .description .card .share {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+  
+ .description .card a {
+    color: white;
+    transition: .4s ease-in-out;
+  }
+  
+ .description .card a:hover {
+    color: red;
+  }
+  
+ .description .card button {
+    padding: 0.8em 1.7em;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    transition: .4s ease-in-out;
+  }
+  
+ .description .card button:hover {
+    background: red;
+    color: white;
+    cursor: pointer;
+  }
+
+}
