@@ -23,19 +23,25 @@ const Header = () => {
 
           </div>
 
-          <div class="details-mobile" >
+          <div class="header-deaktop-options" >
+                    <Link to="/" >
             <button class={page == 1 ? "buttonDetails details-1 active" : "buttonDetails details-1"} type="button" 
               onClick={e=> setPage(1)}>
               <p>ABOUT ME</p>
             </button>
+            </Link>
+            <Link to="/projects" >
             <button class={page == 2 ? "buttonDetails active" : "buttonDetails "} type="button" 
               onClick={e=> setPage(2)}>
               <p>PROJECTS</p>
             </button>
+            </Link>
+                    <Link to="/experience" >
             <button class={page == 3 ? "buttonDetails details-2 active" : "buttonDetails details-2"} type="button"  
               onClick={e=> setPage(3)}>
               <p>EXPERIENCE</p>
             </button>
+            </Link>
 
           </div>
 

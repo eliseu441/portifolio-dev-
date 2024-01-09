@@ -13,7 +13,8 @@
 
     
 }
-.details-mobile{
+.header-deaktop-options{
+    margin-left: 13vw;
     display: flex;
     align-items: center;
     justify-content: baseline;
@@ -47,7 +48,8 @@ background: black;
     border-bottom: 2px solid #fff;
     border-top: 2px solid #fff;
     background: rgb(0,189,26);
-background: linear-gradient(180deg, rgb(0, 63, 8) 0%, rgb(6, 94, 0) 37%, rgb(5, 75, 0) 58%, rgb(0, 66, 9)00%);
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(35, 223, 21) 37%, rgb(35, 209, 23) 58%, rgb(0, 0, 0)100%);
+    color: BLACK;
 
 }
 .buttonDetails p{

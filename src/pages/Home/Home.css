@@ -3,6 +3,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @media (min-width: 770px) and (min-height: 560px) {
+  .aviso{
+    display:none
+  }
 #map {
     height: 100%;
   }
@@ -11,7 +14,6 @@
    height: 110vh;
    position: absolute;
    z-index: -2;
-   margin-top: -110vh;
   }
 
 .page-default{
@@ -50,7 +52,7 @@
 .margin-is{
     margin-left: 23vw;
 }
-.whois{
+.margin-i{
     margin-left: 23.7vw;
 }
 .description{
@@ -160,5 +162,58 @@ body {
     color: white;
     cursor: pointer;
   }
+  .loader-background{
+    display: flex;
+    width: 100vw;
+    height: 100vh ;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+background-color: rgb(0, 0, 0, 0.8);
+z-index: 9999999999;
 
+
+}
+
+
+.loader-background p{
+    font-family: "Cormorant Garamond", serif;;
+    font-size: 3vh;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: white;
+margin-top: -20vh;
+
+}
+.loader {
+  width: 60vw;
+  height: 1.5vh;
+  
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+}
+
+
+.loader::before {
+  content: "";
+  position: absolute;
+  background-color: #0092ca;
+  width: 0%;
+  height: 100%;
+  border-radius: 10px;
+  animation: load 1.5s ease-in-out infinite;
+  box-shadow: #0092ca 0px 2px 29px 0px;
+}
+}
+
+@media (max-width: 770px) or (max-height:560px) {
+  .page-default {
+      display: none;
+ }
+
+ .aviso{
+  display:block
+ }
 }

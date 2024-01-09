@@ -6,6 +6,8 @@ import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Header from './layout/header/Header'
 import Home from './pages/Home/Home'
+import Projects from './pages/Projects/Projects.jsx'
+import Experience from './pages/Experience/Experience.jsx'
 import SideNavBar from './layout/sidebar/SideNavBar';
 
 
@@ -16,6 +18,8 @@ function App() {
       <SideNavBar/>
       <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/experience" element={<Experience />} />
       </Routes>
     </Router>
   );
