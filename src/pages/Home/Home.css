@@ -20,12 +20,11 @@
   }
 
   .page-default {
-    height: 90vh;
-    overflow: hidden;
+    min-height: 484px;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10vh;
   }
 
   .container {
@@ -33,12 +32,14 @@
   }
 
   .apresentation {
-    margin-top: -60vh;
+    min-height: 265px;
+    margin-top: -40vh;
     height: 50vh;
     width: 50vw;
   }
 
   .apresentation-text {
+    min-height: 477px;
     position: absolute;
     display: grid;
     justify-content: baseline;
@@ -97,7 +98,8 @@
   }
 
   .description .card {
-
+    margin-top: 13vh;
+    min-height: 423px;
     background-image: url("./img/background_description - Copia.jpg");
     background-size: cover;
     background-repeat: no-repeat;
