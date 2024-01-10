@@ -237,6 +237,10 @@
   }
 
   .aviso {
+    
+    background-image: url("./img/stars.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: black;
     display: flex !important;
     justify-content: center;
@@ -250,7 +254,7 @@
 
   .card-mobile-advice {
     position: absolute;
-    background-color: rgb(255, 255, 255, 0.1);
+    background-color: rgb(0, 0, 0);
     border: 2px solid white;
     border-radius: 20px;
     margin-top: 12vh;
