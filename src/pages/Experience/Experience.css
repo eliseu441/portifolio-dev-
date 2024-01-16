@@ -5,12 +5,18 @@
         display:none
       }
     .page-experience{
-        margin-top: 10vh;
+        padding-top: 10vh;
         width: 100vw;
         display: flex;
         justify-content: center;
         align-items:center ;
 
+    }
+    .stars{
+        position: absolute;
+        width: 100vw;
+        height: 110vh;
+        overflow: hidden;
     }
     .experience-content{
         border: 2px solid #51ff00;

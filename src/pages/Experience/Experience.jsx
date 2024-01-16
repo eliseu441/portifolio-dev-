@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import './Experience.css';
-import Particles from './particles.js';
 function Experience() {
 
     useEffect(() => {
@@ -22,15 +21,21 @@ function Experience() {
 
     return (
         <>
+            
 
             <div class='page-experience'>
+                <div class='stars'>
+            <div id='stars'></div>
+            <div id='stars2'></div>
+            <div id='stars3'></div>
+            </div>
                 <div class='experience-content'>
 
                     <section id="sobre-mim">
                         <br />
                         <div class="centralizador">
                             <div class="ajustador-2">
-                            <p class="desc-experience mb-5">About my career:<br></br> worked at the company D1-Jornadas-Digitais, which allowed me to understand how APIs functioned, as well as Docker management. Today, I work at Vivo, where I have daily contact with databases such as Microsoft SQL Server in the creation and maintenance of procedures, triggers, and databases, tools for deploying and managing a server such as filezilla, putty and nginx, APIS creation with node and front-end platforms using technologies like react and bootstrap in addition to ETL server management using jenkins as a pipeline.In addition, I also participate in server management and maintenance, creating applications from scratch, and maintaining legacy applications. Additionally, I build automations using tools such as Pentaho-9.</p>
+                                <p class="desc-experience mb-5">About my career:<br></br> worked at the company D1-Jornadas-Digitais, which allowed me to understand how APIs functioned, as well as Docker management. Today, I work at Vivo, where I have daily contact with databases such as Microsoft SQL Server in the creation and maintenance of procedures, triggers, and databases, tools for deploying and managing a server such as filezilla, putty and nginx, APIS creation with node and front-end platforms using technologies like react and bootstrap in addition to ETL server management using jenkins as a pipeline.In addition, I also participate in server management and maintenance, creating applications from scratch, and maintaining legacy applications. Additionally, I build automations using tools such as Pentaho-9.</p>
                                 <div class="ferramentas">
                                     <h2 class="tools mb-5">Languages and tools I worked with:</h2>
 
@@ -79,7 +84,6 @@ function Experience() {
                     </section>
                 </div>
 
-                <Particles id="tsparticles" />
 
 
 
