@@ -16,7 +16,6 @@ import vergz4 from './img/vergs/vergs4.png';
 import monster1 from './img/monster/monster1_desk.png';
 import monster2 from './img/monster/monster2_desk.png';
 import monster3 from './img/monster/monster1_mobile.png';
-import monster4 from './img/monster/monster2_mobile.png';
 
 function Projects() {
     const [author, setAuthor] = useState("MICHELANGELO");
@@ -35,7 +34,7 @@ function Projects() {
         callApis()
     }, []);
     const descHermes = 'The main objective of "Hermes project" is to offer an online art gallery with a navigation experience that engages the user and provides an understanding of the history of our art, considering the complexities of each piece. Currently, the portability is limited to desktop, but it is responsive up to 600px in width by 400px in height. The project has allowed me to gain a deep understanding of how to deploy and manage an application. Both the database and server were built from scratch on virtual servers, providing a solid foundation for future projects where this expertise may be necessary. The access link is already available and can be accessed at: http://hermesarts.com.br:5000'
-    const descVergz = 'Vergz Studio Tattoo App is a React only for mobile screens, project designed to enhance the client experience at Vergz Studio, a dynamic tattoo studio specialized in realizm style. This application provides an intuitive and user-friendly platform for clients to explore the studio portfolio, schedule appointments, and engage with the artists. With a sleek design and seamless navigation, the app aims to streamline the tattoo booking process and foster a closer connection between artists and clients at Vergz Studio. Link acessible on https://vergs-tattoo-kcqo0vg6e-eliseu441.vercel.app/'
+    const descVergz = 'Vergz Studio Tattoo is a responsive app for all screens, project designed to enhance the client experience at Vergz Studio, a dynamic tattoo studio specialized in realizm style. This application provides an intuitive and user-friendly platform for clients to explore the studio portfolio, schedule appointments, and engage with the artists. With a sleek design and seamless navigation, the app aims to streamline the tattoo booking process and foster a closer connection between artists and clients at Vergz Studio. Link acessible on https://vergs-tattoo-kcqo0vg6e-eliseu441.vercel.app/'
     const descMonster = 'This project was a personal challenge I set for myself. The idea was to create a project in less than one week that functions differently on mobile screens and desktops. It is a commercial energy drink interface where you can open a menu to view credits for the images used. On mobile devices, you can also select which product information you want to see on the screen. Additionally, clicking on the logo in the header will automatically scroll to the top of the screen. You can access the link at https://monster-interface.vercel.app/'
 
 
@@ -61,7 +60,6 @@ function Projects() {
             <img src={vergz3} alt="4" />
         ]);
         await setSlidesMonster([
-            <img src={monster4} alt="1" />,
             <img src={monster2} alt="2" />,
             <img src={monster3} alt="3" />,
             <img src={monster1} alt="4" />
@@ -94,7 +92,7 @@ function Projects() {
             <div class='page-projects row'>
                 <div class='carousel-hermes col-12 d-flex-justify-content-center'>
                     <div >
-                        <p class='hermes-project '>HERMES PROJECT- only desktop (main project) </p>
+                        <p class='hermes-project '>HERMES PROJECT- only desktop  </p>
 
                         <button class='button-desc side-infos ms-5'
                             data-bs-toggle="modal" data-bs-target="#modalProject"
@@ -119,7 +117,7 @@ function Projects() {
                 </div>
                 <div class='carousel-vergs col-12 d-flex-justify-content-center'>
                     <div class=''>
-                        <p class='vergs-tattoo'>VERGS-TATTOO (MOBILE-ONLY) </p>
+                        <p class='vergs-tattoo'>VERGS-TATTOO (desktop and mobile) </p>
                         <div>
                             <button class='button-desc side-infos ms-5'
                                 data-bs-toggle="modal" data-bs-target="#modalProject"
@@ -128,7 +126,7 @@ function Projects() {
                                 Infos
                             </button>
 
-                            <Link to="https://vergs-tattoo-kcqo0vg6e-eliseu441.vercel.app/" ><button
+                            <Link to="https://portifolio-vergz2.vercel.app/" ><button
                                 class='button-desc side-production ms-5'>
                                 Deploy link<i class="bi bi-arrow-right"></i>
                             </button>

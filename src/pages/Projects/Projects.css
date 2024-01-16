@@ -7,9 +7,10 @@
     }
 
     .page-projects {
-        margin-top: 10vh;
+        padding-top: 10vh;
         width: 100vw;
-
+        background-image: url('./img/bkg_projects.jpg');
+        background-size: cover;
         position: relative;
         display: flex;
         text-align: center;
@@ -164,7 +165,7 @@
 
     .slider-right {
         display: block;
-        background-image: url('./img/arrow carousel left.png');
+        background-image: url('./img/arrow1.png');
         background-repeat: no-repeat;
         background-size: contain;
         width: 4vw;
@@ -188,7 +189,7 @@
     .slider-left {
 
         display: block;
-        background-image: url('./img/arrow carousel left.png');
+        background-image: url('./img/arrow1.png');
         background-repeat: no-repeat;
         background-size: contain;
         width: 4vw;
