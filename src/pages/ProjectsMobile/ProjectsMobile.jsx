@@ -4,13 +4,14 @@ import './ProjectsMobile.css';
 import { Carousel } from '3d-react-carousal';
 import background from './img/teste_tail.png';
 import background2 from './img/background_description - Copia.jpg';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, A11y, Autoplay, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
 import 'swiper/css/bundle';
-
+import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
 
 import hermes5 from './img/hermes/home.png';
 import hermes2 from './img/hermes/century.png';
@@ -46,11 +47,31 @@ function ProjectsMobile() {
 
 
             <div class='page-projects-mobile'>
-            <p class='warning-projects-mobile'>*note: images of each project are slideable</p>
+                <div class='content-projects'>
                 <div class='hermes-project mb-5'>
                     
                     <p >HERMES-PROJECT</p>
-                    <Swiper>
+                    <Swiper
+                   spaceBetween={30}
+                   centeredSlides={true}
+                   autoplay={{
+                     delay: 2500,
+                     disableOnInteraction: false,
+                   }}
+                   pagination={{
+                     clickable: true,
+                   }}   
+                   modules={[Autoplay, Pagination]}
+                   className="mySwiper"
+                   style={{
+                    "--swiper-pagination-color": "#FFBA08",
+                    "--swiper-pagination-bullet-inactive-color": "#999999",
+                    "--swiper-pagination-bullet-inactive-opacity": "1",
+                    "--swiper-pagination-bullet-size": "10px",
+                    "--swiper-pagination-bullet-horizontal-gap": "6px"
+                  }}
+
+                    >
                         <SwiperSlide><img class='img-arrow' width='100%' height='100%' src={hermes5} /></SwiperSlide>
                         <SwiperSlide><img class='img-arrow' width='100%' height='100%' src={hermes2} /></SwiperSlide>
                         <SwiperSlide><img class='img-arrow' width='100%' height='100%' src={hermes3} /></SwiperSlide>
@@ -61,7 +82,26 @@ function ProjectsMobile() {
                 </div>
                 <div class='vergz-tattoo mb-5'>
                 <p >VERGZ-TATTOO-STUDIO</p>
-                    <Swiper>
+                    <Swiper
+                    spaceBetween={30}
+                    centeredSlides={true}
+                    autoplay={{
+                      delay: 2500,
+                      disableOnInteraction: false,
+                    }}
+                    pagination={{
+                      clickable: true,
+                    }}   
+                    modules={[Autoplay, Pagination]}
+                    className="mySwiper"
+                    style={{
+                     "--swiper-pagination-color": "#FFFF",
+                     "--swiper-pagination-bullet-inactive-color": "#999999",
+                     "--swiper-pagination-bullet-inactive-opacity": "1",
+                     "--swiper-pagination-bullet-size": "10px",
+                     "--swiper-pagination-bullet-horizontal-gap": "6px"
+                   }}
+                    >
                         <SwiperSlide><img class='img-arrow' width='100%' height='100%' src={vergz4} /></SwiperSlide>
                         <SwiperSlide><img class='img-arrow' width='100%' height='100%' src={vergz1} /></SwiperSlide>
                         <SwiperSlide><img class='img-arrow' width='100%' height='100%' src={vergz2} /></SwiperSlide>
@@ -72,7 +112,26 @@ function ProjectsMobile() {
                 </div>
                 <div class='monster-interface '>
                 <p >MONSTER-INTERFACE</p>
-                    <Swiper>
+                    <Swiper
+                    spaceBetween={30}
+                    centeredSlides={true}
+                    autoplay={{
+                      delay: 2500,
+                      disableOnInteraction: false,
+                    }}
+                    pagination={{
+                      clickable: true,
+                    }}   
+                    modules={[Autoplay, Pagination]}
+                    className="mySwiper"
+                    style={{
+                     "--swiper-pagination-color": "#3cff00",
+                     "--swiper-pagination-bullet-inactive-color": "#999999",
+                     "--swiper-pagination-bullet-inactive-opacity": "1",
+                     "--swiper-pagination-bullet-size": "10px",
+                     "--swiper-pagination-bullet-horizontal-gap": "6px"
+                   }}
+                    >
                         <SwiperSlide><img class='img-arrow' width='100%' height='100%' src={monster3} /></SwiperSlide>
                         <SwiperSlide><img class='img-arrow' width='100%' height='100%' src={monster4} /></SwiperSlide>
                         <SwiperSlide><img class='img-arrow' width='100%' height='100%' src={monster1} /></SwiperSlide>
@@ -80,7 +139,7 @@ function ProjectsMobile() {
 
                 </div>
 
-                
+                </div>
 
             </div>
 

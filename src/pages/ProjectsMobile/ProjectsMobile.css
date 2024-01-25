@@ -5,9 +5,12 @@
 
 @media (max-width: 771px){
   .page-projects-mobile{
-
-    padding-top: 100px;
+    
+    padding-top:  100px;
     background-color: black;
+    background-image: url("./img/nebula.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100vw;
     display: grid;
     flex-direction: row;
@@ -15,6 +18,11 @@
     align-items: center;
 
 
+  }
+  .content-projects{
+    padding-right: 20px;
+    padding-left: 20px;
+    zoom: 95%;
   }
   .card-projects-mobile{
     width: 100vw;
