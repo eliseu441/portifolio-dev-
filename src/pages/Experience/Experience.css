@@ -12,13 +12,20 @@
         align-items:center ;
 
     }
+    .experience-title{
+        font-family: "IBM Plex Sans", sans-serif;
+        font-weight: 700;
+        font-size: 7vh;
+        color: WHITE;
+    }
     .stars{
-        position: absolute;
+        position: fixed;
         width: 100vw;
         height: 110vh;
         overflow: hidden;
     }
     .experience-content{
+        margin-top: 50px;
         border: 2px solid #51ff00;
         color: black;
         width: max-content;

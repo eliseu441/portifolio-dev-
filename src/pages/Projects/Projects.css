@@ -1,4 +1,5 @@
-@media (min-width: 770px)  {
+@media (min-width: 2px) {
+    @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
     @import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,600|Tulpen+One&display=swap");
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap');
 
@@ -6,11 +7,44 @@
         display: none;
     }
 
+
+
+    .project-title {
+        margin: 60px 5vw 30px 0;
+        font-family: "IBM Plex Sans", sans-serif;
+        font-weight: 700;
+        font-size: 7vh;
+    }
+    .project-subtitle{
+        color: white;
+        margin: 0px 3vw 30px 0;
+        font-family: "IBM Plex Sans", sans-serif;
+        font-weight: 700;
+        font-size: 3vh;
+
+    }
+    .project-subtitle span {
+        position: absolute;
+        margin: 0;
+        left: 10%;
+    }
+    .project-title span {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10%;
+    }
+
+
+
+
+
     .page-projects {
+        background: radial-gradient(circle at -8.9% 51.2%, rgb(141, 40, 0) 0%, rgb(59, 0, 99) 15.9%, rgb(62, 0, 104) 15.9%, rgb(40, 1, 65) 24.4%, rgb(40, 1, 65) 24.5%, rgb(0, 0, 0) 66%);
+        background-position-y: -70vw;
         padding-top: 10vh;
         width: 100vw;
-        background-image: url('./img/bkg_projects.jpg');
-        background-size: cover;
+        overflow: hidden;
         position: relative;
         display: flex;
         text-align: center;
@@ -23,6 +57,14 @@
         width: 100vw;
     }
 
+    #c {
+        width: 100vw;
+        overflow: hidden;
+        height: 100vh;
+        position: fixed;
+        z-index: -2;
+    }
+
     .carousel-vergs {
         margin-top: 3vw;
         height: 43vw;
@@ -30,19 +72,19 @@
     }
 
     .hermes-project {
+        margin-right: 5vw;
         font-family: 'Archivo Black', sans-serif;
-        font-size: 35px;
-        margin: 0;
+        font-size: 30px;
         background: rgb(174, 118, 34);
-        background: linear-gradient(164deg, rgb(255, 153, 0) 15%, rgb(255, 255, 255) 48%, rgb(255, 153, 0) 83%);
+        background: linear-gradient(164deg, rgb(255, 153, 0) 15%, rgb(255, 64, 50) 48%, rgb(255, 153, 0) 83%);
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    
+
     .vergs-tattoo {
+        margin-right: 5vw;
         font-family: 'Archivo Black', sans-serif;
-        font-size: 35px;
-        margin: 0;
+        font-size: 30px;
         background: rgb(174, 118, 34);
         background: linear-gradient(164deg, rgb(80, 80, 80) 15%, rgb(255, 255, 255) 48%, rgb(88, 88, 88) 83%);
         background-clip: text;
@@ -52,20 +94,17 @@
     }
 
     .monster {
+        margin-right: 5vw;
         font-family: 'Archivo Black', sans-serif;
-        font-size: 35px;
-        margin: 0;
-        background: rgb(174, 118, 34);
-        background: linear-gradient(164deg, rgb(55, 199, 19) 15%, rgb(96, 230, 84) 48%, rgb(57, 179, 20) 83%);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+        font-size: 30px;
+        color: white;
 
 
     }
 
 
     .button-desc {
-        margin: 10px;
+        margin: 10px 8vw 10px 0;
         border-radius: .25rem;
         text-transform: uppercase;
         font-style: normal;
@@ -101,6 +140,7 @@
     .side-production {
         background-image: linear-gradient(90deg, #945b11, #ff9900);
     }
+
     .side-production:hover {
         cursor: pointer;
         transition: all .3s ease-in;
@@ -117,16 +157,16 @@
     #modalProject .modal-dialog {
         max-width: 90vw !important;
         max-height: 70vh !important;
-      
-      }
-      
-      #modalProject .modal-content {
+
+    }
+
+    #modalProject .modal-content {
         height: 100% !important;
-        background-image: url(./img/back2_apresent\ _.jpg);
+        background-color: rgb(0, 0, 0, 0);
         background-size: contain;
-      }
-      
-      #modalProject .modal-header{
+    }
+
+    #modalProject .modal-header {
         color: #f5f5f5;
         display: flex;
         justify-content: center;
@@ -139,39 +179,22 @@
         background: linear-gradient(164deg, rgba(174, 118, 34, 1) 15%, rgb(255, 255, 255) 48%, rgba(174, 118, 34, 1) 83%);
         background-clip: text;
         -webkit-text-fill-color: transparent;
-      }
-      .project-info-modal{
-        display: flex;
-          justify-content: center;
-          background: rgba(255, 255, 255, 0.7);
-          padding: 50px;
-          margin: 1vh 8vw 1vh 8vw;
-          border-radius: 10px;
-          letter-spacing: -0.7px;
-          font-family: 'Archivo Black', sans-serif;
-          font-weight: 600;
-          font-size: 3vh;
-          letter-spacing: 0.3px;
-          color: black;
-          -webkit-box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.75);
-          -moz-box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.75);
-      }
-      #modalProject .modal-header{
+    }
 
-        border: none!important;
-      }
+    .project-info-modal {
+        width: 90%;
+        height: 80vh;
+    }
+
+    #modalProject .modal-header {
+
+        border: none !important;
+    }
 
 
     .slider-right {
         display: block;
-        background-image: url('./img/arrow1.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 4vw;
-        background-position-y: 55%;
-        opacity: 0.7;
-        rotate: 180deg;
+        width: 6vw;
     }
 
     .slider-right div {
@@ -186,15 +209,11 @@
 
         display: none;
     }
+
     .slider-left {
 
         display: block;
-        background-image: url('./img/arrow1.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 4vw;
-        background-position-y: 45%;
-        opacity: 0.7;
+        width: 6vw;
     }
 
 
@@ -221,8 +240,10 @@
 
 }
 
-@media (max-width: 600px) or (max-height:400px) {
-    .page-projects {
+@media (max-width: 600px)  {
+    .page-projects{
+
         display: none;
     }
+
 }

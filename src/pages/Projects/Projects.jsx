@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import './Projects.css';
+
 import { Carousel } from '3d-react-carousal';
 import hermes5 from './img/hermes/home.png';
 import hermes2 from './img/hermes/century.png';
@@ -13,9 +14,9 @@ import vergz2 from './img/vergs/vergs2.png';
 import vergz3 from './img/vergs/vergs3.png';
 import vergz4 from './img/vergs/vergs4.png';
 
-import monster1 from './img/monster/monster1_desk.png';
-import monster2 from './img/monster/monster2_desk.png';
-import monster3 from './img/monster/monster1_mobile.png';
+import th1 from './img/thiago_adv/th1.png';
+import th2 from './img/thiago_adv/th2.png';
+import th3 from './img/thiago_adv/th3.png';
 
 function Projects() {
     const [author, setAuthor] = useState("MICHELANGELO");
@@ -33,9 +34,9 @@ function Projects() {
         // callApis()
         callApis()
     }, []);
-    const descHermes = 'The main objective of "Hermes project" is to offer an online art gallery with a navigation experience that engages the user and provides an understanding of the history of our art, considering the complexities of each piece. Currently, the portability is limited to desktop, but it is responsive up to 600px in width by 400px in height. The project has allowed me to gain a deep understanding of how to deploy and manage an application. Both the database and server were built from scratch on virtual servers, providing a solid foundation for future projects where this expertise may be necessary. The access link is already available and can be accessed at: http://hermesarts.com.br:5000'
-    const descVergz = 'Vergz Studio Tattoo is a responsive app for all screens, project designed to enhance the client experience at Vergz Studio, a dynamic tattoo studio specialized in realizm style. This application provides an intuitive and user-friendly platform for clients to explore the studio portfolio, schedule appointments, and engage with the artists. With a sleek design and seamless navigation, the app aims to streamline the tattoo booking process and foster a closer connection between artists and clients at Vergz Studio. Link acessible on https://vergs-tattoo-kcqo0vg6e-eliseu441.vercel.app/'
-    const descMonster = 'This project was a personal challenge I set for myself. The idea was to create a project in less than one week that functions differently on mobile screens and desktops. It is a commercial energy drink interface where you can open a menu to view credits for the images used. On mobile devices, you can also select which product information you want to see on the screen. Additionally, clicking on the logo in the header will automatically scroll to the top of the screen. You can access the link at https://monster-interface.vercel.app/'
+    const descHermes = 'http://hermesarts.com.br:5000/'
+    const descVergz = 'https://portifolio-vergz2.vercel.app/'
+    const descThiago = 'https://adv-thiago-conde.vercel.app/'
 
 
 
@@ -60,9 +61,9 @@ function Projects() {
             <img src={vergz3} alt="4" />
         ]);
         await setSlidesMonster([
-            <img src={monster2} alt="2" />,
-            <img src={monster3} alt="3" />,
-            <img src={monster1} alt="4" />
+            <img src={th2} alt="2" />,
+            <img src={th3} alt="3" />,
+            <img src={th1} alt="4" />
         ]);
 
 
@@ -78,7 +79,7 @@ function Projects() {
 
     return (
         <>
-
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
             {loading == true ?
                 <div class='loader-background' >
                     <p>Loading Porjects</p>
@@ -87,119 +88,121 @@ function Projects() {
 
                 </div>
                 : <></>}
+            <div>
 
 
-            <div class='page-projects row'>
-                <div class='carousel-hermes col-12 d-flex-justify-content-center'>
-                    <div >
-                        <p class='hermes-project '>HERMES PROJECT- only desktop  </p>
+                <div class='page-projects row'>
 
-                        <button class='button-desc side-infos ms-5'
-                            data-bs-toggle="modal" data-bs-target="#modalProject"
-                            onClick={e => setDescription(descHermes)}
-                        >
-                            Infos
-                        </button>
+                    <div class='project-title' data-aos="fade-left" data-aos-duration="1000"><span>PROJECTS</span></div>
+                    <div class='project-subtitle' data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800"><span>some works in construction...</span></div>
+                    
+                    <div class='carousel-vergs col-12 d-flex-justify-content-center' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2000">
+                        <div class=''>
+                            <p class='vergs-tattoo'>VERGS-TATTOO </p>
+                            <div>
+                                <button class='button-desc side-infos ms-5'
+                                    data-bs-toggle="modal" data-bs-target="#modalProject"
+                                    onClick={e => setDescription(descVergz)}
+                                >
+                                    Live Preview
+                                </button>
 
-                        <Link to="http://hermesarts.com.br:5000" ><button
-                            class='button-desc side-production ms-5'>
-                            Deploy link<i class="bi bi-arrow-right"></i>
-                        </button>
-                        </Link>
 
-                    </div>
-                    {slidesHermes && loading == false ?
+                            </div>
 
-                        <div >
-                            <Carousel slides={slidesHermes} autoplay={false} interval={5000} />
                         </div>
-                        : <></>}
-                </div>
-                <div class='carousel-vergs col-12 d-flex-justify-content-center'>
-                    <div class=''>
-                        <p class='vergs-tattoo'>VERGS-TATTOO (desktop and mobile) </p>
-                        <div>
+                        {slidesVergs && loading == false ?
+
+                            <div >
+                                <Carousel slides={slidesVergs} autoplay={false} interval={5000} />
+                            </div>
+                            : <></>}
+                    </div>
+                    <div class=' col-12 d-flex-justify-content-center ' data-aos="fade-right" data-aos-duration="1000">
+                        <div class=''>
+                            <p class='monster'>ADV. THIAGO CONDE</p>
+
                             <button class='button-desc side-infos ms-5'
                                 data-bs-toggle="modal" data-bs-target="#modalProject"
-                                onClick={e => setDescription(descVergz)}
+                                onClick={e => setDescription(descThiago)}
                             >
-                                Infos
+                                Live Preview
                             </button>
 
-                            <Link to="https://portifolio-vergz2.vercel.app/" ><button
-                                class='button-desc side-production ms-5'>
-                                Deploy link<i class="bi bi-arrow-right"></i>
-                            </button>
-                            </Link>
 
                         </div>
+                        {slidesMonster && loading == false ?
 
-                    </div>
-                    {slidesVergs && loading == false ?
-
-                        <div >
-                            <Carousel slides={slidesVergs} autoplay={false} interval={5000} />
-                        </div>
-                        : <></>}
-                </div>
-                <div class=' col-12 d-flex-justify-content-center'>
-                    <div class=''>
-                        <p class='monster'>MONSTER INTERFACE (mobile and desktop) </p>
-
-                        <button class='button-desc side-infos ms-5'
-                            data-bs-toggle="modal" data-bs-target="#modalProject"
-                            onClick={e => setDescription(descMonster)}
-                        >
-                            Infos
-                        </button>
-
-                        <Link to="https://monster-interface.vercel.app/" ><button
-                            class='button-desc side-production ms-5'>
-                            Deploy link<i class="bi bi-arrow-right"></i>
-                        </button>
-                        </Link>
-
-                    </div>
-                    {slidesMonster && loading == false ?
-
-                        <div >
-                            <Carousel slides={slidesMonster} autoplay={false} interval={5000} />
-                        </div>
-                        : <></>}
-                </div>
-
-
-                <div class="modal fade " id="modalProject" tabindex="-2" aria-labelledby="modalProjectLabel" aria-hidden="true">
-
-                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable .modal-xl ">
-
-
-                        <div class="modal-content">
-                            <div class="modal-header  ">
-
-                                <button type="button" class="btn-close btn-close-white" id="closeCircuito" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div >
+                                <Carousel slides={slidesMonster} autoplay={false} interval={5000} />
                             </div>
+                            : <></>}
+                    </div>
+                    <div class='carousel-hermes col-12 d-flex-justify-content-center mt-3' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1500">
+                        <div >
+                            <p class='hermes-project' >HERMES PROJECT  </p>
 
-                            <div class='modal-body p-1'>
-                                <div class='project-info-modal'>
-                                    {description}
+                            <button class='button-desc side-infos ms-5'
+                                data-bs-toggle="modal" data-bs-target="#modalProject"
+                                onClick={e => setDescription(descHermes)}
+                            >
+                                Live Preview
+                            </button>
+
+                        </div>
+                        {slidesHermes && loading == false ?
+
+                            <div >
+                                <Carousel slides={slidesHermes} autoplay={false} interval={5000} />
+                            </div>
+                            : <></>}
+                    </div>
+                    
+
+                    <div class="modal fade " id="modalProject" tabindex="-2" aria-labelledby="modalProjectLabel" aria-hidden="true">
+
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable .modal-xl ">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header  ">
+
+                                    <button type="button" class="btn-close btn-close-white" id="closeCircuito" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
+
+                                <div class='modal-body p-1'>
+                                    <div >
+                                        <iframe class='project-info-modal' src={description} title="description"></iframe>
+                                    </div>
+                                </div>
+
                             </div>
 
                         </div>
-
                     </div>
                 </div>
+
+
+
+
             </div>
-
-
-
-
             <div class="aviso">
+                <div class='page-home-mobile'>
+                    <div id='stars'></div>
+                    <div id='stars2'></div>
+                    <div id='stars3'></div>
+                    <div class="card-home-mobile">
+                        <div class="box">
+                            <div class='sub-home-mobile'>
+                                <strong> for now, this page is only for desktop.</strong>
 
-                <h4>Pagina criada para desktop.</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
-
         </>
     )
 }
