@@ -93,7 +93,7 @@ function Experience() {
                         >
                             <h3 className="vertical-timeline-element-title">Knowledge</h3>
                             <p>
-                                This yes i have started some courses to improve my skills, the main ones are Rocketseat and Alura courses with focus on back-end development using javascript and node
+                                This year i have started some courses to improve my skills, the main ones are Rocketseat and Alura courses with focus on back-end development using javascript and node
                             </p>
                         </VerticalTimelineElement><VerticalTimelineElement
                             className="vertical-timeline-element--teste"
