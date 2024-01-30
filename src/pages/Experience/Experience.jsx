@@ -34,9 +34,9 @@ function Experience() {
             </div>
             <div class='page-experience row'>
 
-                <div class='project-title' data-aos="fade-left" data-aos-duration="1000"><span>THE ROAD SO FAR...</span></div>
+                <div class='project-title' data-aos="fade-right" data-aos-duration="1500"><span>THE ROAD SO FAR...</span></div>
 
-                <div class='experience-content' data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000">
+                <div class='experience-content' data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1500">
 
 
                     <div class="ajustador-2">
@@ -58,10 +58,12 @@ function Experience() {
 
 
                 </div>
-                <div className="row mt-5" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1500">
+                <div className="row mt-5" >
                     <VerticalTimeline>
+                        <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="2000">
                         <VerticalTimelineElement
                             className="vertical-timeline-element--teste"
+                            
                             contentStyle={{ background: 'rgb(0, 0, 0)', color: '#fff' }}
                             date="2020"
                             contentArrowStyle={{ borderRight: '7px solid  rgb(0, 0, 0)' }}
@@ -74,6 +76,7 @@ function Experience() {
                                 I was studying computer engineering and in parallel a Web Course with JavaScript on Udemy. this gave me the base to deal with programming using front-end techs like css and react.
                             </p>
                         </VerticalTimelineElement>
+                        </div>
                         <VerticalTimelineElement
                             className="vertical-timeline-element--teste"
                             contentStyle={{ background: 'rgb(0, 0, 0)', color: '#fff' }}

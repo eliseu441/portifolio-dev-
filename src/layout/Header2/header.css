@@ -319,7 +319,7 @@
  .cs-site_branding img {
 	 max-height: 45px;
 }
- @media screen and (min-width: 1200px) {
+ @media screen and (min-width: 900px) {
 	 .cs-main_header {
 		 position: relative;
 	}
@@ -497,7 +497,7 @@
 		 max-width: 190px;
 	}
 }
- @media screen and (max-width: 1199px) {
+ @media screen and (max-width: 899px) {
 	/*Mobile Menu Button*/
 	 .cs-munu_dropdown_toggle {
 		 position: absolute;
