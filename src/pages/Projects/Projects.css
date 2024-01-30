@@ -37,9 +37,19 @@
 
 
 
-
+    @keyframes bg-projects {
+        0% {
+          opacity: 0;
+        }
+    
+        100% {
+            opacity: 1;
+        }
+      }
 
     .page-projects {
+        
+        animation: bg-projects 2s;
         background: radial-gradient(circle at -8.9% 51.2%, rgb(141, 40, 0) 0%, rgb(59, 0, 99) 15.9%, rgb(62, 0, 104) 15.9%, rgb(40, 1, 65) 24.4%, rgb(40, 1, 65) 24.5%, rgb(0, 0, 0) 66%);
         background-position-y: -70vw;
         padding-top: 10vh;

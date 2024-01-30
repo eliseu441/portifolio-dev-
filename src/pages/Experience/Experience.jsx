@@ -27,29 +27,34 @@ function Experience() {
     return (
         <>
 
-<div class='stars'>
-                    <div id='stars'></div>
-                    <div id='stars2'></div>
-                    <div id='stars3'></div>
-                </div>
+            <div class='stars'>
+                <div id='stars'></div>
+                <div id='stars2'></div>
+                <div id='stars3'></div>
+            </div>
             <div class='page-experience row'>
 
-                    <div class='project-title' data-aos="fade-left" data-aos-duration="1000"><span>THE ROAD SO FAR...</span></div>
+                <div class='project-title' data-aos="fade-left" data-aos-duration="1000"><span>THE ROAD SO FAR...</span></div>
 
                 <div class='experience-content' data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000">
 
-                        
-                            <div class="ajustador-2">
 
-                                <div class="ferramentas">
-                                    <p class="project-subtitle mb-3">Along my career i have dealed with many tools, below you can see some that i have solid experience and know about my journey untill now.</p>
+                    <div class="ajustador-2">
 
-                                    <p align="left">
-                                         <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img class='icons'src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="80" height="80"/> </a> <a href="https://www.chartjs.org" target="_blank" rel="noreferrer"> <img class='icons'src="https://www.chartjs.org/media/logo-title.svg" alt="chartjs" width="80" height="80"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img class='icons'src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="80" height="80"/> </a> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img class='icons'src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="80" height="80"/> </a> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img class='icons'src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="80" height="80"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img class='icons'src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="80" height="80"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img class='icons'src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="80" height="80"/> </a> <a href="https://www.adobe.com/in/products/illustrator.html" target="_blank" rel="noreferrer"> <img class='icons'src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="illustrator" width="80" height="80"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img class='icons'src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="80" height="80"/> </a> <a href="https://www.jenkins.io" target="_blank" rel="noreferrer"> <img class='icons'src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" alt="jenkins" width="80" height="80"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img class='icons'src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="80" height="80"/> </a> <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> <img class='icons'src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="80" height="80"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img class='icons'src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="80" height="80"/> </a> <a href="https://www.nginx.com" target="_blank" rel="noreferrer"> <img class='icons'src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg" alt="nginx" width="80" height="80"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img class='icons'src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="80" height="80"/> </a> <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img class='icons'src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="80" height="80"/> </a> <a href="https://postman.com" target="_blank" rel="noreferrer"> <img class='icons'src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="80" height="80"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img class='icons'src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="80" height="80"/> </a> <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img class='icons'src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="80" height="80"/> </a> <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img class='icons'src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="80" height="80"/> </a> 
-                                            </p>
-                                </div>
-                            </div>
+                        <div class="ferramentas">
+                            <p class="project-subtitle mb-3">Along my career i have dealed with many tools, below you can see some that i have solid experience and know about my journey untill now.</p>
 
+                            <p align="left">
+                                <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img class='icons' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="80" height="80" /> </a> <a href="https://www.chartjs.org" target="_blank" rel="noreferrer"> <img class='icons' src="https://www.chartjs.org/media/logo-title.svg" alt="chartjs" width="80" height="80" /> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img class='icons' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="80" height="80" /> </a> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img class='icons' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="80" height="80" /> </a> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img class='icons' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="80" height="80" /> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img class='icons' src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="80" height="80" /> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img class='icons' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="80" height="80" /> </a> <a href="https://www.adobe.com/in/products/illustrator.html" target="_blank" rel="noreferrer"> <img class='icons' src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="illustrator" width="80" height="80" /> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img class='icons' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="80" height="80" /> </a> <a href="https://www.jenkins.io" target="_blank" rel="noreferrer"> <img class='icons' src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" alt="jenkins" width="80" height="80" /> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img class='icons' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="80" height="80" /> </a> <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> <img class='icons' src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="80" height="80" /> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img class='icons' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="80" height="80" /> </a> <a href="https://www.nginx.com" target="_blank" rel="noreferrer"> <img class='icons' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg" alt="nginx" width="80" height="80" /> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img class='icons' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="80" height="80" /> </a> <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img class='icons' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="80" height="80" /> </a> <a href="https://postman.com" target="_blank" rel="noreferrer"> <img class='icons' src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="80" height="80" /> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img class='icons' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="80" height="80" /> </a> <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img class='icons' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="80" height="80" /> </a> <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img class='icons' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="80" height="80" /> </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="scroll-downs">
+                        <div class="mousey">
+                            <div class="scroller"></div>
+                        </div>
+                    </div>
 
 
                 </div>
@@ -66,7 +71,7 @@ function Experience() {
                         >
                             <h3 className="vertical-timeline-element-title">Beginning of a developer career</h3>
                             <p>
-                            I was studying computer engineering and in parallel a Web Course with JavaScript on Udemy. this gave me the base to deal with programming using front-end techs like css and react.
+                                I was studying computer engineering and in parallel a Web Course with JavaScript on Udemy. this gave me the base to deal with programming using front-end techs like css and react.
                             </p>
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
@@ -106,7 +111,7 @@ function Experience() {
                         >
                             <h3 className="vertical-timeline-element-title">New job</h3>
                             <p>
-                            I was hired at vivo, by far this is where I gained more knowledge, not just as a developer but as a project designer, infrastructure maintenance, databases creation and maintenance, physical servers and more.
+                                I was hired at vivo, by far this is where I gained more knowledge, not just as a developer but as a project designer, infrastructure maintenance, databases creation and maintenance, physical servers and more.
                             </p>
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
@@ -120,7 +125,7 @@ function Experience() {
                         >
                             <h3 className="vertical-timeline-element-title">Now</h3>
                             <p>
-                            I continue to do both maintenance and creation of systems and in addition I deal with databases, designs, etl server, automation, project structuring and everything involving development, preparation and presentation of the project, when i'm not working i usually elaborate some personal projects to expand my skills.
+                                I continue to do both maintenance and creation of systems and in addition I deal with databases, designs, etl server, automation, project structuring and everything involving development, preparation and presentation of the project, when i'm not working i usually elaborate some personal projects to expand my skills.
                             </p>
                         </VerticalTimelineElement>
                     </VerticalTimeline>

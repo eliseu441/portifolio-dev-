@@ -126,7 +126,7 @@
     display: flex;
     text-align: end;
     align-items: end;
-    margin-top: 8vh;
+    padding-top: 8vh;
 
     
   }
@@ -168,7 +168,7 @@
     white-space: pre-wrap;
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 700;
-    font-size: 70px;
+    font-size: 9vh;
     width: 100%;
     color: #ffffff;
     text-align: start;
