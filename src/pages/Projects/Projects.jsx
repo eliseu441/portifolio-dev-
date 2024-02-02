@@ -270,7 +270,7 @@ function Projects() {
                                             <div className="item">
                                                 <img src="/img/1x1.jpg" alt="" />
                                                 <div className="item_in">
-                                                    <div className="img project-images" style={{ backgroundImage: "url(/img/slider/vergz/img2.png)" }} />
+                                                    <div className="img project-images" style={{ backgroundImage: "url(/img/slider/vergz/img2.PNG)" }} />
                                                 </div>
                                             </div>
                                         </li>
