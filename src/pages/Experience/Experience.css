@@ -40,7 +40,10 @@
         100% { transform: translateY(15px); opacity: 0;}
       }
     .page-experience{
-        padding-top: 10vh;
+      
+      width: 100vw;
+      overflow-x: hidden;
+      padding-top: 70px;
         width: 100vw;
         display: flex;
         justify-content: center;

@@ -3,7 +3,6 @@
 	 position: relative;
 	 z-index: 101;
 }
-
 .cube {
 	transition: all 0.4s;
 	transform-style: preserve-3d;

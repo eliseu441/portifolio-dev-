@@ -13,17 +13,24 @@ import ProjectsMobile from './pages/ProjectsMobile/ProjectsMobile.jsx'
 import ExperienceMobile from './pages/ExperienceMobile/ExperienceMobile.jsx'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import Preloader from "./layout/preLoader/Preloader.jsx";
 
 
 function App() {
-  
+  const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     // callApis()
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1500);
     Aos.init({ once: true });
 }, []);
   return (
+    
     <Router>
+       
       <Header/>
+      {isLoading ? <Preloader /> : (
       <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
@@ -31,7 +38,7 @@ function App() {
           <Route path="/homeMobile" element={<HomeMobile />} />
           <Route path="/ProjectsMobile" element={<ProjectsMobile />} />
           <Route path="/experienceMobile" element={<ExperienceMobile />} />
-      </Routes>
+      </Routes>)}
     </Router>
   );
 }

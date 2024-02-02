@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import './HomeMobile.css';
-import { Carousel } from '3d-react-carousal';
 import background from './img/teste_tail.png';
 
 

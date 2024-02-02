@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-@media (min-width: 900px) {
+@media (min-width: 100px) {
   .aviso {
     display: none !important;
   }
@@ -121,7 +121,7 @@
   .images-intro {
     height: 90vh;
     width: 30vw;
-    min-width: 486px;
+    min-width: 470px;
     padding-right: 100px;
     display: flex;
     text-align: end;
@@ -176,7 +176,7 @@
   }
 
   .description .card-intro {
-    margin-top: 13vh;
+    margin-top: 70px;
     min-height: 423px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -310,7 +310,7 @@
 
 }
 
-@media (max-width: 900px) {
+@media (max-width: 100px) {
   .page-default {
     display: none;
   }

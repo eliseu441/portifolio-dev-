@@ -21,7 +21,9 @@ function Home() {
                 <div class='row d-flex justify-content-end images-intro'>
                         <p class='text-who' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">WHO </p>
                         <p class='text-am' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">AM </p>
+                        <i class="bi bi-arrow-right-circle-fill"></i>
                         <p class='text-ii' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1500">I? </p>
+                        
                 </div>
 
                 <div class='description'>
@@ -50,20 +52,6 @@ function Home() {
             </div>
 
             <div class="aviso">
-                <div class='page-home-mobile'>
-                    <div id='stars'></div>
-                    <div id='stars2'></div>
-                    <div id='stars3'></div>
-                    <div class="card-home-mobile">
-                        <div class="box">
-                            <div class='sub-home-mobile'>
-                                <strong> for now, this page is only for desktop.</strong>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
 
             </div>
         </>
