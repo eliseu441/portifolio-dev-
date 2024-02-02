@@ -57,6 +57,7 @@
         color: WHITE;
     }
     .stars{
+      color: #ff5020;
         position: fixed;
         width: 100vw;
         height: 110vh;
