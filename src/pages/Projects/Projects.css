@@ -6,9 +6,9 @@
     .aviso {
         display: none;
     }
-    .icon-projects{
+   .vergs-tattoo svg{
 
-        cursor: pointer;
+        cursor: pointer!important;
     }
 
 
@@ -109,13 +109,16 @@
         background-color: rgba(255, 145, 0, 0.4);
 
     }
-
+    @keyframes show-up {
+        0% { opacity: 0; }
+        100% {  opacity: 1; }
+      }
     .fn_cs_slider .slider_top .item_in{
         max-width: 600px;
         max-height: 450px;
         min-width: 300px;
         min-height: 250;
-
+        animation:  show-up 2s;
 
         padding: 0;
         border-radius: 10px;
@@ -249,7 +252,7 @@
         align-items: center;
         justify-content: center;
         position: relative;
-        margin-right: 5vw ;
+        margin-right: 6vw ;
     }
     .slider_nav > *{
         margin-right: 100px;
@@ -625,6 +628,14 @@
 
     }
 
+
+
+
+}
+@media (max-width: 900px) {
+    .project-subtitle{
+        display: none!important;
+    }
 
 
 

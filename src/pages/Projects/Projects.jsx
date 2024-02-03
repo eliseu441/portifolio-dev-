@@ -4,6 +4,8 @@ import './Projects.css';
 import { Icon } from '@iconify/react';
 
 import Carousel from "react-spring-3d-carousel";
+
+import ResponsiveCarousel from "../../component/responsive_carousel";
 import { v4 as uuidv4 } from 'uuid';
 import { config } from "react-spring";
 import hermes5 from './img/hermes/home.png';
@@ -32,7 +34,8 @@ function Projects() {
     const [author, setAuthor] = useState("MICHELANGELO");
     const [loading, setLoading] = useState(false);
     const [comboSculp, setComboSculp] = useState(false);
-    const [projeto, setProjeto] = useState(false);
+    const [projeto, setProjeto] = useState(1);
+    const [nomeProjeto, setNomeProjeto] = useState('vergz');
     const [slides, setSlides] = useState(false);
     const [description, setDescription] = useState('TESTE');
     useEffect(() => {
@@ -156,7 +159,11 @@ function Projects() {
 
     useEffect(() => {
         // callApis()
-    }, []);
+        setLoading(true)
+
+        setNomeProjeto(projeto == 1 ? 'vergz' : projeto == 2 ? 'thiago' : 'hermes')
+        setLoading(false)
+    }, [projeto]);
     const descHermes = 'The main objective of "Hermes project" is to offer an online art gallery with a navigation experience that engages the user and provides an understanding of the history of our art, considering the complexities of each piece. Currently, the portability is limited to desktop, but it is responsive up to 600px in width by 400px in height. The project has allowed me to gain a deep understanding of how to deploy and manage an application. Both the database and server were built from scratch on virtual servers, providing a solid foundation for future projects where this expertise may be necessary. The access link is already available and can be accessed at: http://hermesarts.com.br:5000'
     const descVergz = 'Vergz Studio Tattoo App is a responsive React app, project designed to enhance the client experience at Vergz Studio, a dynamic tattoo studio specialized in realizm style. This application provides an intuitive and user-friendly platform for clients to explore the studio portfolio, schedule appointments, and engage with the artists. With a sleek design and seamless navigation, the app aims to streamline the tattoo booking process and foster a closer connection between artists and clients at Vergz Studio. Link acessible on https://portifolio-vergz2.vercel.app/'
     const descMonster = 'This project was a personal challenge I set for myself. The idea was to create a project in less than one week that functions differently on mobile screens and desktops. It is a commercial energy drink interface where you can open a menu to view credits for the images used. On mobile devices, you can also select which product information you want to see on the screen. Additionally, clicking on the logo in the header will automatically scroll to the top of the screen. You can access the link at https://monster-interface.vercel.app/'
@@ -186,13 +193,13 @@ function Projects() {
 
 
 
-    const getProjeto = async () => {
-        await setLoading(true)
-
-
-
-
+    const getProjeto = async (number) => {
+        setLoading(true)
+        await setProjeto(number)
+        await setNomeProjeto(number == 1 ? 'vergz' : number == 2 ? 'thiago' : 'hermes')
         setLoading(false)
+        return
+
     }
 
 
@@ -203,283 +210,90 @@ function Projects() {
     return (
         <>
             <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-                <div>
-                    <div class="parallax-wrap" data-aos="zoom-in" data-aos-duration="1000">
-                        <img value="-15" src={bg5} />
-                        <img value="5" src={bg2} />
-                        <img value="30" src={bg3} />
-                        <img value="-5" src={bg4} />
-                        <img value="15" src={bg1} />
-                    </div>
-                    <div class='bg-projects'>
-                    </div>
-
-                    <div class='page-projects row'>
-
-                        <div class='project-title' data-aos="fade-left" data-aos-duration="1000"><span>PROJECTS</span></div>
-                        <div class='project-subtitle' data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800"><span>some works in construction...</span></div>
-
-                        <div class='carousel-vergs d-flex-justify-content-center mt-5' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2000">
-                            <div class=''>
-
-
-                                <p class='vergs-tattoo'> VERGS-TATTOO  </p>
-
-                                <div>
-                                    <button class='button-desc side-infos ms-5'
-                                        data-bs-toggle="modal" data-bs-target="#modalProject"
-                                        onClick={e => setDescription(linkVergz)}
-                                    >
-                                        Live Preview
-                                    </button>
-
-
-                                </div>
-
-                            </div>
-                            <div className="slider_nav">
-                                <a href="#" className="prev">
-                                    <span className="circle" />
-                                    <span className="icon">
-                                        <img src="/svg/down.svg" alt="" className="fn__svg" />
-                                    </span>
-                                    <span className="circle" />
-                                </a>
-                                <a href="#" className="next">
-                                    <span className="circle" />
-                                    <span className="icon">
-                                        <img src="/svg/down.svg" alt="" className="fn__svg" />
-                                    </span>
-                                    <span className="circle" />
-                                </a>
-                            </div>
-                            <div className="fn_cs_slider" data-responsive="on">
-
-                                <div className="slider_top">
-                                    <img src="/img/1x1.jpg" alt="" />
-                                    <ul>
-                                        <li className="prev" data-index={1}>
-                                            <div className="item">
-                                                <img src="/img/1x1.jpg" alt="" />
-                                                <div className="item_in">
-                                                    <div className="img project-images" style={{ backgroundImage: "url(/img/slider/vergz/img1.png)" }} />
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li className="active" data-index={2}>
-                                            <div className="item">
-                                                <img src="/img/1x1.jpg" alt="" />
-                                                <div className="item_in">
-                                                    <div className="img project-images" style={{ backgroundImage: "url(/img/slider/vergz/img2.png)" }} />
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li className="next2" data-index={3}>
-                                            <div className="item">
-                                                <img src="/img/1x1.jpg" alt="" />
-                                                <div className="item_in">
-                                                    <div className="img project-images" style={{ backgroundImage: "url(/img/slider/vergz/img3.png)" }} />
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li className="prev2" data-index={4}>
-                                            <div className="item">
-                                                <img src="/img/1x1.jpg" alt="" />
-                                                <div className="item_in">
-                                                    <div className="img project-images" style={{ backgroundImage: "url(/img/slider/vergz/img4.png)" }} />
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class='carousel-thiago d-flex-justify-content-center mt-5' data-aos="fade-right" data-aos-duration="1000" >
-                            <div class=''>
-
-
-                                <p class='vergs-tattoo'> ADV. THIAGO  </p>
-
-                                <div>
-                                    <button class='button-desc side-infos ms-5'
-                                        data-bs-toggle="modal" data-bs-target="#modalProject"
-                                        onClick={e => setDescription(linkThiago)}
-                                    >
-                                        Live Preview
-                                    </button>
-
-
-                                </div>
-
-                            </div>
-                            <div className="slider_nav">
-                                <a href="#" className="prev">
-                                    <span className="circle" />
-                                    <span className="icon">
-                                        <img src="/svg/down.svg" alt="" className="fn__svg" />
-                                    </span>
-                                    <span className="circle" />
-                                </a>
-                                <a href="#" className="next">
-                                    <span className="circle" />
-                                    <span className="icon">
-                                        <img src="/svg/down.svg" alt="" className="fn__svg" />
-                                    </span>
-                                    <span className="circle" />
-                                </a>
-                            </div>
-                            <div className="fn_cs_slider" data-responsive="on">
-
-                                <div className="slider_top">
-                                    <img src="/img/1x1.jpg" alt="" />
-                                    <ul>
-                                        <li className="prev" data-index={1}>
-                                            <div className="item">
-                                                <img src="/img/1x1.jpg" alt="" />
-                                                <div className="item_in">
-                                                    <div className="img project-images" style={{ backgroundImage: "url(/img/slider/thiago/img1.png)" }} />
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li className="active" data-index={2}>
-                                            <div className="item">
-                                                <img src="/img/1x1.jpg" alt="" />
-                                                <div className="item_in">
-                                                    <div className="img project-images" style={{ backgroundImage: "url(/img/slider/thiago/img2.png)" }} />
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li className="next2" data-index={3}>
-                                            <div className="item">
-                                                <img src="/img/1x1.jpg" alt="" />
-                                                <div className="item_in">
-                                                    <div className="img project-images" style={{ backgroundImage: "url(/img/slider/thiago/img3.png)" }} />
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li className="prev2" data-index={4}>
-                                            <div className="item">
-                                                <img src="/img/1x1.jpg" alt="" />
-                                                <div className="item_in">
-                                                    <div className="img project-images" style={{ backgroundImage: "url(/img/slider/thiago/img4.png)" }} />
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class='carousel-hermes d-flex-justify-content-center mt-5' data-aos="fade-right" data-aos-duration="1000" >
-                            <div class=''>
-
-
-                                <p class='vergs-tattoo'> HERMES PROJECT  </p>
-
-                                <div>
-                                <Link to='http://hermesarts.com.br:5000/' className="cs-center me-3">
-                                
-                                    <button class='button-desc side-infos ms-5'
-                                        data-bs-toggle="modal" data-bs-target="#modalProject"
-                                        
-                                    >
-                                        Live Preview
-                                    </button>
-                                    </Link>
-
-
-                                </div>
-
-                            </div>
-                            <div className="slider_nav">
-                                <a href="#" className="prev">
-                                    <span className="circle" />
-                                    <span className="icon">
-                                        <img src="/svg/down.svg" alt="" className="fn__svg" />
-                                    </span>
-                                    <span className="circle" />
-                                </a>
-                                <a href="#" className="next">
-                                    <span className="circle" />
-                                    <span className="icon">
-                                        <img src="/svg/down.svg" alt="" className="fn__svg" />
-                                    </span>
-                                    <span className="circle" />
-                                </a>
-                            </div>
-                            <div className="fn_cs_slider" data-responsive="on">
-
-                                <div className="slider_top">
-                                    <img src="/img/1x1.jpg" alt="" />
-                                    <ul>
-                                        <li className="prev" data-index={1}>
-                                            <div className="item">
-                                                <img src="/img/1x1.jpg" alt="" />
-                                                <div className="item_in">
-                                                    <div className="img project-images" style={{ backgroundImage: "url(/img/slider/hermes/img1.png)" }} />
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li className="active" data-index={2}>
-                                            <div className="item">
-                                                <img src="/img/1x1.jpg" alt="" />
-                                                <div className="item_in">
-                                                    <div className="img project-images" style={{ backgroundImage: "url(/img/slider/hermes/img2.png)" }} />
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li className="next2" data-index={3}>
-                                            <div className="item">
-                                                <img src="/img/1x1.jpg" alt="" />
-                                                <div className="item_in">
-                                                    <div className="img project-images" style={{ backgroundImage: "url(/img/slider/hermes/img3.png)" }} />
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li className="prev2" data-index={4}>
-                                            <div className="item">
-                                                <img src="/img/1x1.jpg" alt="" />
-                                                <div className="item_in">
-                                                    <div className="img project-images" style={{ backgroundImage: "url(/img/slider/hermes/img4.png)" }} />
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <div class="modal fade " id="modalProject" tabindex="-2" aria-labelledby="modalProjectLabel" aria-hidden="true">
-
-                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable .modal-xl ">
-
-
-                                <div class="modal-content">
-                                    <div class="modal-header  ">
-
-                                        <button type="button" class="btn-close btn-close-white" id="closeCircuito" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-
-                                    <div class='modal-body p-1'>
-                                        <div >
-                                            <iframe class='project-info-modal' src={description} title="description"></iframe>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
+            <div>
+                <div class="parallax-wrap" data-aos="zoom-in" data-aos-duration="1000">
+                    <img value="-15" src={bg5} />
+                    <img value="5" src={bg2} />
+                    <img value="30" src={bg3} />
+                    <img value="-5" src={bg4} />
+                    <img value="15" src={bg1} />
                 </div>
-            
+                <div class='bg-projects'>
+                </div>
+
+                <div class='page-projects row' >
+                
+                    <div class='project-title' data-aos="fade-left" data-aos-duration="1000"><span>PROJECTS</span></div>
+                    <div class='project-subtitle' data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800"><span>some works in construction...</span></div>
+                    
+                    <div class='carousel-vergs d-flex-justify-content-center mt-5' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2000" >
+                        <div class=''>
+
+
+                            <p class='vergs-tattoo'>
+
+                                <Icon icon="bxs:left-arrow"
+                                    class='icon-projects'
+                                    onClick={e => getProjeto(projeto - 1)}
+                                    style={{ display: projeto > 1 ? 'inline' : 'none' }}
+                                />
+
+                                {projeto == 1? 'VERGZ TATTOO': projeto == 2? 'ADV THIAGO': 'HERMES PROJECT'}
+
+                                <Icon icon="bxs:right-arrow"
+                                    
+                                    onClick={e => getProjeto(projeto + 1)}
+                                    style={{ display: projeto < 3 ? 'inline' : 'none' }}
+                                />  </p>
+
+                            <div>
+                                <button class='button-desc side-infos ms-5'
+                                    data-bs-toggle="modal" data-bs-target="#modalProject"
+                                    onClick={e => setDescription(linkVergz)}
+                                >
+                                    Live Preview
+                                </button>
+
+
+                            </div>
+
+                        </div>
+                        <ResponsiveCarousel project={nomeProjeto} />
+                    </div>
+
+    
+
+
+
+
+                    <div class="modal fade " id="modalProject" tabindex="-2" aria-labelledby="modalProjectLabel" aria-hidden="true">
+
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable .modal-xl ">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header  ">
+
+                                    <button type="button" class="btn-close btn-close-white" id="closeCircuito" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class='modal-body p-1'>
+                                    <div >
+                                        <iframe class='project-info-modal' src={description} title="description"></iframe>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
             <div class="aviso">
                 <div class='page-home-mobile'>
                     <div id='stars'></div>

@@ -15,13 +15,9 @@ function Home() {
             <div class='page-default' data-aos="zoom-in">
                 <div class='fundo2'></div>
                 <div class='fundo'></div>
-
-
-
-                <div class='row d-flex justify-content-end images-intro'>
+                <div class='row  images-intro'>
                         <p class='text-who' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">WHO </p>
                         <p class='text-am' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">AM </p>
-                        <i class="bi bi-arrow-right-circle-fill"></i>
                         <p class='text-ii' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1500">I? </p>
                         
                 </div>

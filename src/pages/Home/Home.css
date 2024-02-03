@@ -78,18 +78,6 @@
 
   }
 
-  .margin-who {
-    margin-left: 13.3vw;
-    font-size: 100px;
-  }
-
-  .margin-is {
-    margin-left: 23vw;
-  }
-
-  .margin-i {
-    margin-left: 23.7vw;
-  }
 
   .description {
     height: 90vh;
@@ -141,7 +129,27 @@
     background: linear-gradient(60deg, rgba(255,205,0,1) 16%, rgba(255,102,0,1) 45%, rgba(255,192,0,1) 79%);
     -webkit-background-clip: text;
   }
+@media  (max-width: 900px) {
+.images-intro {
+  padding: 0!important;
+  display: grid;
+  height: 40vh;
+  width: 100vw;
+  min-width: 0!important;
+  text-align: start;
+  justify-content: baseline;
+  align-items: start;
+  margin-top: -40vh;
 
+  
+}
+.description{
+  display: none;
+}
+
+
+
+}
   body {
     background-color: #000000;
     color: white;
