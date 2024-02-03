@@ -297,7 +297,13 @@
 
 
 }
+@media  (min-width: 901px) {
 
+  .home-mobile{
+    display: none;
+    
+  }
+}
 @media  (max-width: 900px) {
   .home-mobile{
     position: fixed;
