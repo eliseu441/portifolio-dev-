@@ -40,7 +40,7 @@
     height: 100vh;
   }
 
-  .page-default {
+  .home-desktop {
 
     min-height: 484px;
     height: 100vh;
@@ -129,27 +129,7 @@
     background: linear-gradient(60deg, rgba(255,205,0,1) 16%, rgba(255,102,0,1) 45%, rgba(255,192,0,1) 79%);
     -webkit-background-clip: text;
   }
-@media  (max-width: 900px) {
-.images-intro {
-  padding: 0!important;
-  display: grid;
-  height: 40vh;
-  width: 100vw;
-  min-width: 0!important;
-  text-align: start;
-  justify-content: baseline;
-  align-items: start;
-  margin-top: -40vh;
 
-  
-}
-.description{
-  display: none;
-}
-
-
-
-}
   body {
     background-color: #000000;
     color: white;
@@ -318,198 +298,136 @@
 
 }
 
-@media (max-width: 100px) {
-  .page-default {
-    display: none;
-  }
-
-  .aviso {
-
-    display: flex !important;
-    justify-content: center;
-    align-items: start;
-    text-align: center;
-    height: 100vh;
+@media  (max-width: 900px) {
+  .home-mobile{
+    position: fixed;
     width: 100vw;
-    overflow: hidden;
-
+    display: grid;
+    justify-content: center!important;
+    align-items: center;
+    text-align: center;
+    
+  }
+  .fundo {
+    
+    background-position-x: -40vw;
+  }
+  .fundo2 {
+    background-position-x: -40vw;
   }
 
-  .card-intro-mobile-advice {
-    position: absolute;
-    background-color: rgb(0, 0, 0);
-    border: 2px solid white;
-    border-radius: 20px;
-    margin-top: 12vh;
-    width: 80vw;
-    height: max-content;
-  }
 
-  .card-intro-mobile-advice p {
-    padding: 7px;
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 2.5vh;
-    background: black;
-    background: linear-gradient(121deg, rgba(255, 255, 255, 1) 0%, rgba(168, 168, 168, 1) 46%, rgba(255, 255, 255, 1) 100%);
-    background-clip: text;
+.home-mobile .title {
+  margin: 120px 0 10px 0;
+  width: 100vw;
+  line-height: 0;
+  
+}
+.home-mobile .title span{
+  font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 700;
+    font-size: 9vh;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black; 
     -webkit-text-fill-color: transparent;
-    text-shadow: -1px -1px 8px rgba(255, 255, 255, 0.3);
+    background: rgb(255,205,0);
+    background: linear-gradient(60deg, rgba(255,205,0,1) 16%, rgba(255,102,0,1) 45%, rgba(255,192,0,1) 79%);
+    -webkit-background-clip: text;
+}
 
-  }
 
-  .loader-black {
-    margin-top: 40vh;
-    margin-left: 90vw;
-    display: flex;
-    width: 18rem;
-    height: 18rem;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 3;
-    flex-direction: column;
-  }
 
-  .curve {
+
+.home-mobile .project-subtitle{
+  color: white;
+  margin: 0 0 0 20px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-size: 3vh;
+
+}
+.home-mobile .project-subtitle span{
+  font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 700;
+    font-size: 4vh;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black; 
+    -webkit-text-fill-color: transparent;
+    background: rgb(255, 255, 255);
+    -webkit-background-clip: text;
+}
+.card-intro-mobile{
+  margin: 5%;
+  height: 60vh;
+  background-color: #000000;
+
+
+  background-color: rgb(0, 0, 0, 0.7);
+  border: 2px solid rgb(255, 94, 0);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  padding: 2vw;
+  transition: 1s ease-in-out;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card-mobile-content{
+  width: 100%;
+  height: 100%;
+}
+.desciption-title-mobile{
+  -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(0, 0, 0); 
+    -webkit-text-fill-color: white;
+    white-space: pre-wrap;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 700;
+    font-size: 5vh;
     width: 100%;
-    height: 100%;
-    position: absolute;
-    animation: rotate 8s linear infinite;
-    fill: transparent;
-  }
-
-  .curve text {
-    letter-spacing: 20px;
-    text-transform: uppercase;
-    font: 1.5em "Fira Sans", sans-serif;
-    fill: white;
-    filter: drop-shadow(0 2px 8px black);
-  }
-
-  .blackhole {
-    z-index: -1;
-    display: flex;
-    position: absolute;
-    width: 12.3rem;
-    height: 12.3rem;
-    align-items: center;
-    justify-content: center;
-
-  }
-
-  .blackhole-circle {
-
-    position: absolute;
-    z-index: 10 !important;
-    z-index: 1;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background: radial-gradient(circle at center, black 25%, white 35%, white 100%);
-    box-shadow: 0px 0px 1rem #ff7b00;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .blackhole-circle::after {
-    z-index: 0;
-    position: absolute;
-    content: "";
-    display: flex;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border: 4px solid white;
-    background: radial-gradient(circle at center, black 35%, white 60%, white 100%);
-    box-shadow: 0px 0px 5rem #c2babb;
-    align-items: center;
-    justify-content: center;
-    filter: blur(4px);
-    animation: pulseAnimation linear infinite 2s alternate-reverse;
-  }
-
-  .blackhole-circle::before {
-    background-color: rgb(0, 0, 0);
-    z-index: 2;
-    content: "";
-    display: flex;
-    width: 7rem;
-    height: 7rem;
-    box-shadow: 3px 3px 10px #c2babb;
-    border-radius: 50%;
-    top: 5rem;
-    filter: blur(0.5px);
-    animation: rotate linear infinite 3s;
-  }
-
-  .blackhole-disc {
-    position: absolute;
-    z-index: 9;
-    display: flex;
-    width: 12rem;
-    height: 30rem;
-    border-radius: 60%;
-    background: radial-gradient(circle at center, #ffffff 80%, #353535 90%, white 100%);
-    filter: blur(1rem) brightness(130%);
-    border: 1rem solid white;
-    box-shadow: 0px 0px 3rem #d7c4be;
-    transform: rotate3d(1, 1, 1, 220deg);
-    animation: pulseAnimation2 linear infinite 2s alternate-reverse;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .blackhole-disc::before {
-    content: "";
-    position: absolute;
-    z-index: 0;
-    display: flex;
-    width: 5rem;
-    height: 10rem;
-    border-radius: 50%;
-    background: radial-gradient(circle at center, #ffffff 80%, #353535 90%, white 100%);
-    filter: blur(3rem);
-    border: 1rem solid white;
-    box-shadow: 0px 0px 6rem #d7c4be;
-    animation: pulseAnimation linear infinite 2s alternate-reverse;
-  }
-
-  @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-
-  @keyframes pulseAnimation {
-    0% {
-      box-shadow: 0px 0px 3rem #c2babb;
-      transform: scale(1);
-    }
-
-    100% {
-      box-shadow: 0px 0px 5rem #c2babb;
-      transform: scale(1.09);
-    }
-  }
-
-  @keyframes pulseAnimation2 {
-    0% {
-      box-shadow: 0px 0px 3rem #c2babb;
-      transform: rotate3d(1, 1, 1, 220deg) scale(1);
-    }
-
-    100% {
-      box-shadow: 0px 0px 5rem #c2babb;
-      transform: rotate3d(1, 1, 1, 220deg) scale(.95);
-    }
-  }
-
-
+    color: #ffffff;
+    text-align: start;
+    margin-left: 4%;
+    margin-bottom: 0;
 
 
 }
+.desciption-sub-mobile{
+    
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 700;
+    font-size: 2.5vh;
+    width: 90%;
+    color: #ffffff;
+    text-align: start;
+    margin-left: 4%;
+
+
+}
+
+  
+  .images-intro {
+    padding: 0!important;
+    display: grid;
+    height: 40vh;
+    width: 100vw;
+    min-width: 0!important;
+    text-align: start;
+    justify-content: baseline;
+    align-items: start;
+    margin-top: -40vh;
+  
+    
+  }
+  .description{
+    display: none;
+  }
+  .home-desktop{
+    display: none;
+  }
+  
+  
+  
+  }

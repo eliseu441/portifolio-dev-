@@ -523,11 +523,16 @@
 	 .cs-munu_dropdown_toggle.active:before {
 		 transform: translate(-50%, -50%) rotate(0deg);
 	}
+	@keyframes show-down-header {
+        0% { margin-top: -20vh; }
+        100% {  margin-top: 0;}
+      }
 	 .cs-nav .cs-nav_list {
-		 position: absolute;
+		animation: show-down-header 1s ;
 		 width: 100vw;
-		 left: -12px;
-		 background-color: #181818;
+		 background-color: rgb(0, 0, 0, 0.4);
+		 -webkit-backdrop-filter: blur(20px);
+		 backdrop-filter: blur(20px);
 		 padding: 10px 0;
 		 display: none;
 		 top: 100%;
@@ -536,6 +541,17 @@
 		 overflow: auto;
 		 max-height: calc(100vh - 80px);
 		 line-height: 1.6em;
+	}
+	.cs-nav .cs-nav_list a{
+		color: #fff;
+		text-decoration: none;
+
+		font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 700;
+    font-size: 2.5vh;
+    color: #ffffff;
+    text-align: start;
+    margin-left: 4%;
 	}
 	 .cs-nav .cs-nav_list ul {
 		 padding-left: 15px;

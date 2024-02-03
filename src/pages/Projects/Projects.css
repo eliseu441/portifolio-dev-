@@ -9,7 +9,7 @@
    .vergs-tattoo svg{
 
         cursor: pointer!important;
-    }
+    }   
 
 
     .fn_cs_slider{
@@ -401,30 +401,28 @@
         left: 30%;
         z-index: 3;
       }
-    .project-title {
-        margin: 60px 5vw 30px 0;
+      .page-projects .title {
+        margin: 10px 5vw 0 0;
         font-family: "IBM Plex Sans", sans-serif;
         font-weight: 700;
-        font-size: 7vh;
+        font-size: 6.5vh;
+        left: 10%;
     }
-    .project-subtitle{
+    .page-projects .project-subtitle{
         color: white;
         margin: 0px 3vw 30px 0;
         font-family: "IBM Plex Sans", sans-serif;
         font-weight: 700;
         font-size: 3vh;
+        left: 10%;
 
     }
-    .project-subtitle span {
-        position: absolute;
+     .project-subtitle span {
         margin: 0;
-        left: 10%;
     }
-    .project-title span {
-        position: absolute;
+    .title span {
         top: 50%;
         transform: translateY(-50%);
-        left: 10%;
     }
 
 
@@ -479,7 +477,7 @@
         font-family: 'Archivo Black', sans-serif;
         font-size: 30px;
         background: rgb(174, 118, 34);
-        background: linear-gradient(164deg, rgb(80, 80, 80) 15%, rgb(255, 255, 255) 48%, rgb(88, 88, 88) 83%);
+        background: linear-gradient(164deg, rgb(187, 187, 187) 15%, rgb(255, 255, 255) 48%, rgb(151, 151, 151) 83%);
         background-clip: text;
         -webkit-text-fill-color: transparent;
 
@@ -633,7 +631,7 @@
 
 }
 @media (max-width: 900px) {
-    .project-subtitle{
+    .page-projects .project-subtitle{
         display: none!important;
     }
 

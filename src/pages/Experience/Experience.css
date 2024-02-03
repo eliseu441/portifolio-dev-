@@ -1,4 +1,4 @@
-@media (min-width: 770px) {
+@media (min-width: 2px) {
     @import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,600|Tulpen+One&display=swap");
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap');
     .aviso{
@@ -42,7 +42,6 @@
     .page-experience{
       
       width: 100vw;
-      overflow-x: hidden;
       padding-top: 70px;
         width: 100vw;
         display: flex;
@@ -50,12 +49,25 @@
         align-items:center ;
 
     }
-    .experience-title{
-        font-family: "IBM Plex Sans", sans-serif;
-        font-weight: 700;
-        font-size: 7vh;
-        color: WHITE;
-    }
+  .page-experience .title {
+    margin: 0!important;
+    padding: 0 6vh 0 6vh;
+    width: max-content;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 700;
+    font-size: 6.5vh;
+    left: 10%;
+}
+.page-experience .project-subtitle{
+  color: white;
+  margin: 0px 3vw 30px 0;
+  font-family: "IBM Plex Sans", sans-serif; 
+  font-weight: 700;
+  font-size: 3vh;
+  left: 10%;
+
+}
+  
     .stars{
       color: #ff5020;
         position: fixed;
@@ -64,7 +76,9 @@
         overflow: hidden;
     }
     .experience-content{
+
         margin-top: 50px;
+        margin-left: 20px;
         border: 2px solid #FF4A17;
         color: black;
         width: max-content;
@@ -73,7 +87,7 @@
         border-radius: 30px;
 
         height: max-content;
-        width: 70vw;
+        width: 90vw;
     padding: 20px;
     }
     .tools{
@@ -106,9 +120,6 @@
 }
 
 @media (max-width: 770px) {
-    .page-experience {
-        display: none;
-   }
    
   }
   

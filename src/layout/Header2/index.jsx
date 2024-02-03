@@ -47,7 +47,7 @@ export default function Header({ variant }) {
                         to="projects"
                         onClick={() => setMobileToggle(false)}
                       >
-                        Portifolio
+                        Projects
                       </NavLink>
                     </li>
                     <li className="menu-item">
