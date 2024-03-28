@@ -249,7 +249,7 @@ function Projects() {
                             <div>
                                 <button class='button-desc side-infos ms-5'
                                     data-bs-toggle="modal" data-bs-target="#modalProject"
-                                    onClick={e => setDescription(linkVergz)}
+                                    onClick={e => setDescription(projeto == 1? linkVergz:  linkThiago)}
                                 >
                                     Live Preview
                                 </button>
