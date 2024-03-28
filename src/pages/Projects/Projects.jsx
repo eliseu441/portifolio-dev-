@@ -226,7 +226,7 @@ function Projects() {
                     <div class='title' data-aos="fade-left" data-aos-duration="1000"><span>PROJECTS</span></div>
                     <div class='project-subtitle' data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800"><span>some works in construction...</span></div>
                     
-                    <div class='carousel-vergs d-flex-justify-content-center mt-5' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2000" >
+                    <div class='carousel-vergs d-flex-justify-content-center ' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2000" >
                         <div class=''>
 
 
