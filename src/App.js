@@ -11,6 +11,7 @@ import Experience from './pages/Experience/Experience.jsx'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Preloader from "./layout/preLoader/Preloader.jsx";
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 
 function App() {

@@ -3,26 +3,7 @@ import { Link } from "react-router-dom";
 import './Projects.css';
 import { Icon } from '@iconify/react';
 
-import Carousel from "react-spring-3d-carousel";
-
 import ResponsiveCarousel from "../../component/responsive_carousel";
-import { v4 as uuidv4 } from 'uuid';
-import { config } from "react-spring";
-import hermes5 from './img/hermes/home.png';
-import hermes2 from './img/hermes/century.png';
-import hermes3 from './img/hermes/sculp.png';
-import hermes4 from './img/hermes/types.png';
-import hermes1 from './img/hermes/art_book.png';
-
-import vergz1 from './img/vergs/vergs1.png';
-import vergz2 from './img/vergs/vergs2.png';
-import vergz3 from './img/vergs/vergs3.png';
-import vergz4 from './img/vergs/vergs4.png';
-
-import th1 from './img/thiago_adv/th1.png';
-import th2 from './img/thiago_adv/th2.png';
-import th3 from './img/thiago_adv/th3.png';
-
 
 import bg1 from './img/parallax_effect/bubble1.png';
 import bg2 from './img/parallax_effect/bubble2.png';
@@ -222,15 +203,15 @@ function Projects() {
                 </div>
 
                 <div class='page-projects row' >
-                
+
                     <div class='title' data-aos="fade-left" data-aos-duration="1000"><span>PROJECTS</span></div>
                     <div class='project-subtitle' data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800"><span>some works in construction...</span></div>
-                    
+
                     <div class='carousel-vergs d-flex-justify-content-center ' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2000" >
                         <div class=''>
 
 
-                            <p class={projeto == 3?'hermes-project': 'vergs-tattoo'}>
+                            <p class={projeto == 3 ? 'hermes-project' : 'vergs-tattoo'}>
 
                                 <Icon icon="bxs:left-arrow"
                                     class='icon-projects'
@@ -238,21 +219,38 @@ function Projects() {
                                     style={{ display: projeto > 1 ? 'inline' : 'none' }}
                                 />
 
-                                {projeto == 1? 'VERGZ TATTOO': projeto == 2? 'ADV THIAGO': 'HERMES PROJECT'}
+                                {projeto == 1 ? 'VERGZ TATTOO' : projeto == 2 ? 'ADV THIAGO' : 'HERMES PROJECT'}
 
                                 <Icon icon="bxs:right-arrow"
-                                    
+
                                     onClick={e => getProjeto(projeto + 1)}
                                     style={{ display: projeto < 3 ? 'inline' : 'none' }}
                                 />  </p>
 
-                            <div>
+
+
+                            <div style={{ display: projeto !== 3 ? 'block' : 'none' }}>
+
+                     
                                 <button class='button-desc side-infos ms-5'
                                     data-bs-toggle="modal" data-bs-target="#modalProject"
-                                    onClick={e => setDescription(projeto == 1? linkVergz:  linkThiago)}
+                                    onClick={e => setDescription(projeto == 1 ? linkVergz : linkThiago)}
                                 >
                                     Live Preview
                                 </button>
+                            </div>
+
+                            <div style={{ display: projeto == 3 ? 'block' : 'none' }}>
+
+                             
+                                <Link to="http://hermesarts.com.br:5000/" >
+                                    <button class='button-desc side-infos ms-5'
+                                        data-bs-toggle="modal" data-bs-target="#modalProject"
+
+                                    >
+                                        Live Preview
+                                    </button>
+                                </Link>
 
 
                             </div>
@@ -261,7 +259,7 @@ function Projects() {
                         <ResponsiveCarousel project={nomeProjeto} />
                     </div>
 
-    
+
 
 
 
@@ -287,6 +285,8 @@ function Projects() {
 
                         </div>
                     </div>
+
+
                 </div>
 
 

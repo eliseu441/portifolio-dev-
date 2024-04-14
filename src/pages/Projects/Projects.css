@@ -495,7 +495,8 @@
 
 
     .button-desc {
-        margin: 10px 8vw 10px 0;
+        margin-right: 8vw;
+        margin-left: 10px!important;
         border-radius: .25rem;
         text-transform: uppercase;
         font-style: normal;
@@ -625,8 +626,19 @@
         text-shadow: -1px -1px 8px rgba(255, 255, 255, 0.3);
 
     }
-
-
+    .information {
+    
+        font-size: 3.3vh;
+        padding-top: 2px;
+        background: rgb(252, 246, 186);
+        background: linear-gradient(112.1deg, rgb(49, 91, 226) 11.4%, rgb(36, 50, 95) 70.2%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor: pointer;
+      }
+      .information:hover {
+        transform: scale(2)!important;
+      }
 
 
 }
@@ -638,3 +650,4 @@
 
 
 }
+

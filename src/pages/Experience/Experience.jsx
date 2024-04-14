@@ -36,7 +36,7 @@ function Experience() {
 
                 <div class='title' data-aos="fade-right" data-aos-duration="1500"><span>THE ROAD SO FAR...</span></div>
 
-                <div class='experience-content' data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1500">
+                <div class='experience-content' data-aos="zoom-in" data-aos-duration="1000" >
 
 
                     <div class="ajustador-2">
