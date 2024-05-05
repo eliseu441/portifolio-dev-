@@ -15,3 +15,17 @@
   box-sizing: border-box;
 }
 
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0, 0);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(221, 54, 3);
+  filter: blur(1px);
+  border-radius: 10px;
+  border: none;
+}

@@ -222,7 +222,28 @@
     color: white;
     transition: .4s ease-in-out;
   }
-
+  .description .card-intro .curriculum {
+    color: rgb(102, 255, 0);
+    transition: .4s ease-in-out;
+  }
+  .description .card-intro .curriculum:hover {
+    color: green;
+  }
+  .tooltiptext {
+    opacity: 0;
+    color: white;
+    font-weight: 100;
+    margin: -30px 0 0 10px!important;
+    font-size: 10px;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    }
+    
+  .curriculum:hover .tooltiptext {
+    opacity: 1;
+    transition: all 0.4s;
+    }
   .description .card-intro a:hover {
     color: red;
   }
@@ -332,7 +353,7 @@
 .home-mobile .title span{
   font-family: "IBM Plex Sans", sans-serif;
     font-weight: 700;
-    font-size: 9vh;
+    font-size: 4rem;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black; 
     -webkit-text-fill-color: transparent;
@@ -349,13 +370,12 @@
   margin: 0 0 0 20px;
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 700;
-  font-size: 3vh;
 
 }
 .home-mobile .project-subtitle span{
   font-family: "IBM Plex Sans", sans-serif;
     font-weight: 700;
-    font-size: 4vh;
+    font-size: 2rem;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black; 
     -webkit-text-fill-color: transparent;
@@ -365,9 +385,6 @@
 .card-intro-mobile{
   margin: 5%;
   height: 60vh;
-  background-color: #000000;
-
-
   background-color: rgb(0, 0, 0, 0.7);
   border: 2px solid rgb(255, 94, 0);
   -webkit-backdrop-filter: blur(20px);
@@ -381,6 +398,8 @@
   flex-direction: column;
 }
 .card-mobile-content{
+  overflow-y: scroll;
+  overflow-x: hidden;
   width: 100%;
   height: 100%;
 }
