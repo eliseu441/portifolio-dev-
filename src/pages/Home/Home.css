@@ -20,6 +20,19 @@
       filter: none;
     }
   }
+  @keyframes show-icons {
+
+    0% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
 
   .fundo {
     opacity: 0.7;
@@ -210,8 +223,9 @@
     border-radius: 15px;
     margin: auto;
   }
-
+  
   .description .card-intro .share {
+    animation: show-icons 4.5s normal;
     margin-top: 1em;
     display: flex;
     justify-content: center;

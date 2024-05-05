@@ -222,10 +222,10 @@ function Projects() {
                                 {projeto == 1 ? 'VERGZ TATTOO' : projeto == 2 ? 'ADV THIAGO' : 'HERMES PROJECT'}
 
                                 <Icon icon="bxs:right-arrow"
-
                                     onClick={e => getProjeto(projeto + 1)}
                                     style={{ display: projeto < 3 ? 'inline' : 'none' }}
-                                />  </p>
+                                />  
+                            </p>
 
 
                             {projeto !== 3 ? <div style={{ display: 'block' }}>
