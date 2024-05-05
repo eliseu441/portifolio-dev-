@@ -12,6 +12,11 @@
     }   
 
 
+    .carousel-hermes{  
+        max-width: 99vw!important;
+        overflow: visible;
+    }
+    
     .fn_cs_slider{
         padding: 0 20px;
         overflow: hidden;

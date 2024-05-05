@@ -228,35 +228,38 @@ function Projects() {
                                 />  </p>
 
 
+                            {projeto !== 3 ? <div style={{ display: 'block' }}>
 
-                            <div style={{ display: projeto !== 3 ? 'block' : 'none' }}>
 
-                     
-                                <button class='button-desc side-infos ms-5'
+                                <button class='button-desc side-infos'
                                     data-bs-toggle="modal" data-bs-target="#modalProject"
                                     onClick={e => setDescription(projeto == 1 ? linkVergz : linkThiago)}
                                 >
                                     Live Preview
                                 </button>
-                            </div>
-
-                            <div style={{ display: projeto == 3 ? 'block' : 'none' }}>
-
-                             
-                                <Link to="http://hermesarts.com.br:5000/" >
-                                    <button class='button-desc side-infos ms-5'
-                                        data-bs-toggle="modal" data-bs-target="#modalProject"
-
-                                    >
-                                        Live Preview
-                                    </button>
-                                </Link>
+                            </div> :
+                                <div style={{ display: 'block' }}>
 
 
-                            </div>
+                                    <Link to="http://hermesarts.com.br:5000/" >
+                                        <button class='button-desc side-infos'
+                                            data-bs-toggle="modal" data-bs-target="#modalProject"
+
+                                        >
+                                            Live Preview
+                                        </button>
+                                    </Link>
+
+
+                                </div>
+
+                            }
+
+
+
 
                         </div>
-                        <ResponsiveCarousel project={nomeProjeto} />
+                        <ResponsiveCarousel project={nomeProjeto} style={{ maxWidth: '99vw' }} />
                     </div>
 
 
