@@ -34,13 +34,11 @@ function Projects() {
         setNomeProjeto(projeto == 1 ? 'vergz' : projeto == 2 ? 'thiago' : 'hermes')
         setLoading(false)
     }, [projeto]);
-    const descHermes = 'The main objective of "Hermes project" is to offer an online art gallery with a navigation experience that engages the user and provides an understanding of the history of our art, considering the complexities of each piece. Currently, the portability is limited to desktop, but it is responsive up to 600px in width by 400px in height. The project has allowed me to gain a deep understanding of how to deploy and manage an application. Both the database and server were built from scratch on virtual servers, providing a solid foundation for future projects where this expertise may be necessary. The access link is already available and can be accessed at: http://hermesarts.com.br:5000'
-    const descVergz = 'Vergz Studio Tattoo App is a responsive React app, project designed to enhance the client experience at Vergz Studio, a dynamic tattoo studio specialized in realizm style. This application provides an intuitive and user-friendly platform for clients to explore the studio portfolio, schedule appointments, and engage with the artists. With a sleek design and seamless navigation, the app aims to streamline the tattoo booking process and foster a closer connection between artists and clients at Vergz Studio. Link acessible on https://portifolio-vergz2.vercel.app/'
-    const descMonster = 'This project was a personal challenge I set for myself. The idea was to create a project in less than one week that functions differently on mobile screens and desktops. It is a commercial energy drink interface where you can open a menu to view credits for the images used. On mobile devices, you can also select which product information you want to see on the screen. Additionally, clicking on the logo in the header will automatically scroll to the top of the screen. You can access the link at https://monster-interface.vercel.app/'
 
     const linkHermes = 'https://hermesproject-sql-server.onrender.com/'
     const linkVergz = 'https://portifolio-vergz2.vercel.app/'
     const linkThiago = 'https://adv-thiago-conde.vercel.app/'
+
     document.addEventListener("mousemove", parallax);
     function parallax(event) {
         this.querySelectorAll(".parallax-wrap img").forEach((shift) => {
@@ -129,12 +127,12 @@ function Projects() {
                                 <div style={{ display: 'block' }}>
 
 
-                                    <Link to="http://hermesarts.com.br:5000/" >
+                                    <Link to="https://hermesproject-sql-server.onrender.com/" >
                                         <button class='button-desc side-infos'
                                             data-bs-toggle="modal" data-bs-target="#modalProject"
 
                                         >
-                                            Live Preview
+                                            Live Previeww
                                         </button>
                                     </Link>
 
