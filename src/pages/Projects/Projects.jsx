@@ -1,140 +1,29 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import './Projects.css';
+import './images_carousel.css';
 import { Icon } from '@iconify/react';
-
-import ResponsiveCarousel from "../../component/responsive_carousel";
-
+import Slider from "react-slick";
 import bg1 from './img/parallax_effect/bubble1.png';
 import bg2 from './img/parallax_effect/bubble2.png';
 import bg3 from './img/parallax_effect/bubble3.png';
 import bg4 from './img/parallax_effect/bubble4.png';
 import bg5 from './img/parallax_effect/bubble5.png';
+const settings = {
+    dots: true,
+    dotsClass: "slick-dots slick-thumb",
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1
+};
+
+
 
 function Projects() {
-    const [author, setAuthor] = useState("MICHELANGELO");
     const [loading, setLoading] = useState(false);
-    const [comboSculp, setComboSculp] = useState(false);
     const [projeto, setProjeto] = useState(1);
     const [nomeProjeto, setNomeProjeto] = useState('vergz');
-    const [slides, setSlides] = useState(false);
     const [description, setDescription] = useState('TESTE');
-    useEffect(() => {
-        const fn_cs_slider = document.querySelectorAll(".fn_cs_slider");
-        fn_cs_slider.forEach((element) => {
-            let sliderTop = element.getElementsByClassName("slider_top")[0],
-                sliderBottom = element.getElementsByClassName("slider_content"),
-                activeIndex = 2,
-                speed = 20000;
-
-            let myInterval = setInterval(function () {
-                activeIndex++;
-                activeIndex = sliderDo(sliderTop, sliderBottom, activeIndex);
-            }, speed);
-            const prev = document.querySelector(".slider_nav .prev"),
-                next = document.querySelector(".slider_nav .next"),
-                li = element.getElementsByTagName("li");
-            prev.addEventListener("click", function (e) {
-                e.preventDefault();
-                clearInterval(myInterval);
-                activeIndex--;
-                activeIndex = sliderDo(sliderTop, sliderBottom, activeIndex);
-                myInterval = setInterval(function () {
-                    activeIndex++;
-                    activeIndex = sliderDo(sliderTop, sliderBottom, activeIndex);
-                }, speed);
-                return false;
-            });
-            next.addEventListener("click", (e) => {
-                e.preventDefault();
-                clearInterval(myInterval);
-                activeIndex++;
-                activeIndex = sliderDo(sliderTop, sliderBottom, activeIndex);
-                myInterval = setInterval(function () {
-                    activeIndex--;
-                    activeIndex = sliderDo(sliderTop, sliderBottom, activeIndex);
-                }, speed);
-                return false;
-            });
-            for (let i = 0; i < li.length; i++) {
-                const liElement = li[i];
-                const getClass = liElement.getAttribute("class");
-                if (getClass === "next") {
-                    activeIndex++;
-                } else if (getClass === "prev") {
-                    activeIndex--;
-                } else {
-                    return false;
-                }
-                clearInterval(myInterval);
-                activeIndex = sliderDo(sliderTop, sliderBottom, activeIndex);
-                myInterval = setInterval(function () {
-                    activeIndex++;
-                    activeIndex = sliderDo(sliderTop, sliderBottom, activeIndex);
-                }, speed);
-                return false;
-            }
-        });
-    }, []);
-    const sliderDo = (sliderTop, sliderBottom, activeIndex) => {
-        var topLength = sliderTop.getElementsByTagName("li").length;
-        if (activeIndex > topLength) {
-            activeIndex -= topLength;
-        }
-        var indexPrev = activeIndex - 1;
-        var indexPrev2 = activeIndex - 2;
-        var indexNext = activeIndex + 1;
-        var indexNext2 = activeIndex + 2;
-        if (indexPrev > topLength) {
-            indexPrev -= topLength;
-        }
-        if (indexPrev2 > topLength) {
-            indexPrev2 -= topLength;
-        }
-        if (indexNext > topLength) {
-            indexNext -= topLength;
-        }
-        if (indexNext2 > topLength) {
-            indexNext2 -= topLength;
-        }
-        if (indexPrev < 1) {
-            indexPrev += topLength;
-        }
-        if (indexPrev2 < 1) {
-            indexPrev2 += topLength;
-        }
-        if (activeIndex < 1) {
-            activeIndex += topLength;
-        }
-        if (indexNext < 1) {
-            indexNext += topLength;
-        }
-        if (indexNext2 < 1) {
-            indexNext2 += topLength;
-        }
-        let li = sliderTop.getElementsByTagName("li");
-        for (let i = 0; i < li.length; i++) {
-            const element = li[i];
-            element.classList.remove("prev", "prev2", "active", "next", "next2");
-            // element.setAttribute(`data-index${indexNext}`);
-        }
-        sliderTop
-            .querySelector('li[data-index="' + indexPrev2 + '"]')
-            .classList.add("prev2");
-        sliderTop
-            .querySelector('li[data-index="' + indexPrev + '"]')
-            .classList.add("prev");
-        sliderTop
-            .querySelector('li[data-index="' + activeIndex + '"]')
-            .classList.add("active");
-        sliderTop
-            .querySelector('li[data-index="' + indexNext + '"]')
-            .classList.add("next");
-        sliderTop
-            .querySelector('li[data-index="' + indexNext2 + '"]')
-            .classList.add("next2");
-        return activeIndex;
-    };
 
 
 
@@ -149,7 +38,7 @@ function Projects() {
     const descVergz = 'Vergz Studio Tattoo App is a responsive React app, project designed to enhance the client experience at Vergz Studio, a dynamic tattoo studio specialized in realizm style. This application provides an intuitive and user-friendly platform for clients to explore the studio portfolio, schedule appointments, and engage with the artists. With a sleek design and seamless navigation, the app aims to streamline the tattoo booking process and foster a closer connection between artists and clients at Vergz Studio. Link acessible on https://portifolio-vergz2.vercel.app/'
     const descMonster = 'This project was a personal challenge I set for myself. The idea was to create a project in less than one week that functions differently on mobile screens and desktops. It is a commercial energy drink interface where you can open a menu to view credits for the images used. On mobile devices, you can also select which product information you want to see on the screen. Additionally, clicking on the logo in the header will automatically scroll to the top of the screen. You can access the link at https://monster-interface.vercel.app/'
 
-    const linkHermes = 'http://hermesarts.com.br:5000/'
+    const linkHermes = 'https://hermesproject-sql-server.onrender.com/'
     const linkVergz = 'https://portifolio-vergz2.vercel.app/'
     const linkThiago = 'https://adv-thiago-conde.vercel.app/'
     document.addEventListener("mousemove", parallax);
@@ -204,11 +93,10 @@ function Projects() {
 
                 <div class='page-projects row' >
 
-                    <div class='title' data-aos="fade-left" data-aos-duration="1000"><span>PROJECTS</span></div>
-                    <div class='project-subtitle' data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800"><span>some works in construction...</span></div>
+                    <div class='title mt-3' data-aos="fade-left" data-aos-duration="1000"><span>PROJECTS</span></div>
 
-                    <div class='carousel-vergs d-flex-justify-content-center ' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2000" >
-                        <div class=''>
+                    <div class='carousel-vergs d-flex-justify-content-center mt-2' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2000" >
+                        <div class='row d-flex justify-content-center'>
 
 
                             <p class={projeto == 3 ? 'hermes-project' : 'vergs-tattoo'}>
@@ -224,7 +112,7 @@ function Projects() {
                                 <Icon icon="bxs:right-arrow"
                                     onClick={e => getProjeto(projeto + 1)}
                                     style={{ display: projeto < 3 ? 'inline' : 'none' }}
-                                />  
+                                />
                             </p>
 
 
@@ -256,10 +144,16 @@ function Projects() {
                             }
 
 
-
-
+                            <div class='resize-carousel  mt-2' >
+                                <Slider {...settings}>
+                                    <div class={`imgSlider ${projeto == 1 ? 'vergz' : projeto == 2 ? 'thiago' : 'hermes'}1 `} />
+                                    <div class={`imgSlider ${projeto == 1 ? 'vergz' : projeto == 2 ? 'thiago' : 'hermes'}2 `} />
+                                    <div class={`imgSlider ${projeto == 1 ? 'vergz' : projeto == 2 ? 'thiago' : 'hermes'}3 `} />
+                                    <div class={`imgSlider ${projeto == 1 ? 'vergz' : projeto == 2 ? 'thiago' : 'hermes'}4 `} />
+                                </Slider>
+                            </div>
                         </div>
-                        <ResponsiveCarousel project={nomeProjeto} style={{ maxWidth: '99vw' }} />
+
                     </div>
 
 
@@ -267,19 +161,18 @@ function Projects() {
 
 
 
-                    <div class="modal fade " id="modalProject" tabindex="-2" aria-labelledby="modalProjectLabel" aria-hidden="true">
+                    <div class="modal fade" id="modalProject" tabindex="-2" aria-labelledby="modalProjectLabel" aria-hidden="true">
 
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable .modal-xl ">
 
 
                             <div class="modal-content">
-                                <div class="modal-header  ">
-
+                                <div class="modal-header">
                                     <button type="button" class="btn-close btn-close-white" id="closeCircuito" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
 
                                 <div class='modal-body p-1'>
-                                    <div >
+                                    <div>
                                         <iframe class='project-info-modal' src={description} title="description"></iframe>
                                     </div>
                                 </div>
