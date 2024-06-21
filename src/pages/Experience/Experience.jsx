@@ -71,7 +71,7 @@ function Experience() {
                         >
                             <h3 className="vertical-timeline-element-title">Beginning of a developer career</h3>
                             <p>
-                                I was studying computer engineering and in parallel a Web Course with JavaScript on Udemy. this gave me the base to deal with programming using front-end techs like css and react.
+                                I was studying computer engineering and in parallel a Web Course with JavaScript at Udemy, this gave me the base to deal with programming using front-end techs like css and react.
                             </p>
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
