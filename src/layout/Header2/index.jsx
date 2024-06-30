@@ -42,14 +42,6 @@ export default function Header({ variant }) {
                       </NavLink>
                       
                     </li>
-                    <li>
-                      <NavLink
-                        to="projects"
-                        onClick={() => setMobileToggle(false)}
-                      >
-                        Projects
-                      </NavLink>
-                    </li>
                     <li className="menu-item">
                       <NavLink
                         to="experience"
@@ -59,6 +51,15 @@ export default function Header({ variant }) {
                       </NavLink>
                       
                     </li>
+                    <li>
+                      <NavLink
+                        to="projects"
+                        onClick={() => setMobileToggle(false)}
+                      >
+                        Projects
+                      </NavLink>
+                    </li>
+                    
                     
                   </ul>
                   <span
