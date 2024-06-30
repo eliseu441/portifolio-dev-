@@ -11,6 +11,12 @@
 	transform: translate3d(0, 0, 1em);
 }
 
+.cs-nav .cs-nav_list .active {
+	color: rgb(255, 255, 255);
+	text-decoration: underline;
+	text-shadow: 3px 2px 3px rgba(255,255,255,0.6);
+	
+}
  .cs-site_header .cs-btn.cs-style6 {
 	 font-size: 16px;
 }
