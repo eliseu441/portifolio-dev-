@@ -17,7 +17,20 @@ export default function Header({ variant }) {
       }
     });
   }, []);
-
+  
+  return (
+    <>
+    <header className='novo-portifolio row d-flex justify-content-center align-items-center'>
+      <div className="d-flex flex-column align-items-center">
+        <h4>this is an older version of my portifolio, to see actual version click on:<br/></h4>
+        <Link to="https://portifolio-vite-dun.vercel.app/">
+          <button type="button" className="btn btn-outline-warning">My portifolio</button>
+        </Link>
+      </div>
+    </header>
+  </>
+  );
+/*
   return (
     <>
       <header
@@ -119,5 +132,5 @@ export default function Header({ variant }) {
         </div>
       </div>
     </>
-  );
+  );*/
 }
